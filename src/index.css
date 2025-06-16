@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    --primary: 220 100% 20%; /* McKinsey blue */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 18%; /* Dark gray for text */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 13% 45%;
+
+    --accent: 35 91% 32%; /* McKinsey gold */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 90%;
+    --input: 220 13% 90%;
+    --ring: 220 100% 20%;
+
+    --radius: 0.125rem; /* McKinsey uses very subtle rounded corners */
+
+    /* Additional McKinsey-specific colors */
+    --gray-50: 220 13% 98%;
+    --gray-100: 220 13% 95%;
+    --gray-200: 220 13% 90%;
+    --gray-300: 220 13% 80%;
+    --gray-400: 220 13% 65%;
+    --gray-500: 220 13% 45%;
+    --gray-600: 220 13% 35%;
+    --gray-700: 220 13% 25%;
+    --gray-800: 220 13% 18%;
+    --gray-900: 220 13% 12%;
+
+    --sidebar-background: 220 13% 98%;
+    --sidebar-foreground: 220 13% 18%;
+    --sidebar-primary: 220 100% 20%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 91% 32%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 13% 90%;
+    --sidebar-ring: 220 100% 20%;
+  }
+
+  .dark {
+    --background: 220 13% 12%;
+    --foreground: 220 13% 98%;
+
+    --card: 220 13% 12%;
+    --card-foreground: 220 13% 98%;
+
+    --popover: 220 13% 12%;
+    --popover-foreground: 220 13% 98%;
+
+    --primary: 220 100% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 98%;
+    --secondary-foreground: 220 13% 12%;
+
+    --muted: 220 13% 25%;
+    --muted-foreground: 220 13% 65%;
+
+    --accent: 35 91% 32%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 220 100% 20%;
+
+    --sidebar-background: 220 13% 12%;
+    --sidebar-foreground: 220 13% 98%;
+    --sidebar-primary: 220 100% 20%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 91% 32%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 13% 25%;
+    --sidebar-ring: 220 100% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+/* McKinsey-style typography */
+@layer utilities {
+  .font-serif {
+    font-family: "Georgia", "Times New Roman", serif;
+  }
+
+  .font-sans {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+}
