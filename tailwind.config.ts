@@ -61,7 +61,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// GLYNAC Brand Colors
+				glynac: {
+					50: 'hsl(var(--glynac-50))',
+					100: 'hsl(var(--glynac-100))',
+					200: 'hsl(var(--glynac-200))',
+					300: 'hsl(var(--glynac-300))',
+					400: 'hsl(var(--glynac-400))',
+					500: 'hsl(var(--glynac-500))', // Primary blue #1E90FF
+					600: 'hsl(var(--glynac-600))', // Steel blue #4682B4
+					700: 'hsl(var(--glynac-700))',
+					800: 'hsl(var(--glynac-800))', // Midnight blue #191970
+					900: 'hsl(var(--glynac-900))',
+					blue: '#1E90FF',
+					'steel-blue': '#4682B4',
+					'midnight-blue': '#191970',
+					white: '#FFFFFF',
+					'light-gray': '#E0E0E0'
 				}
+			},
+			fontFamily: {
+				'futura': ['Futura', 'Futura PT', 'Avenir', 'Century Gothic', 'sans-serif'],
+				'arial': ['Arial', 'Helvetica', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

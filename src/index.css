@@ -2,99 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+/* GLYNAC Design System - Geometric and Sleek */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 13% 18%;
+    /* GLYNAC Color Palette */
+    --glynac-blue: 210 100% 56%; /* #1E90FF */
+    --glynac-steel-blue: 210 50% 50%; /* #4682B4 */
+    --glynac-midnight-blue: 240 100% 25%; /* #191970 */
+    --glynac-white: 0 0% 100%; /* #FFFFFF */
+    --glynac-light-gray: 0 0% 88%; /* #E0E0E0 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
+    --background: var(--glynac-white);
+    --foreground: var(--glynac-midnight-blue);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
+    --card: var(--glynac-white);
+    --card-foreground: var(--glynac-midnight-blue);
 
-    --primary: 220 100% 20%; /* McKinsey blue */
-    --primary-foreground: 0 0% 100%;
+    --popover: var(--glynac-white);
+    --popover-foreground: var(--glynac-midnight-blue);
 
-    --secondary: 220 13% 18%; /* Dark gray for text */
-    --secondary-foreground: 0 0% 100%;
+    --primary: var(--glynac-blue);
+    --primary-foreground: var(--glynac-white);
 
-    --muted: 220 13% 95%;
-    --muted-foreground: 220 13% 45%;
+    --secondary: var(--glynac-steel-blue);
+    --secondary-foreground: var(--glynac-white);
 
-    --accent: 35 91% 32%; /* McKinsey gold */
-    --accent-foreground: 0 0% 100%;
+    --muted: var(--glynac-light-gray);
+    --muted-foreground: var(--glynac-midnight-blue);
+
+    --accent: var(--glynac-steel-blue);
+    --accent-foreground: var(--glynac-white);
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: var(--glynac-white);
 
-    --border: 220 13% 90%;
-    --input: 220 13% 90%;
-    --ring: 220 100% 20%;
+    --border: var(--glynac-light-gray);
+    --input: var(--glynac-light-gray);
+    --ring: var(--glynac-blue);
 
-    --radius: 0.125rem; /* McKinsey uses very subtle rounded corners */
+    --radius: 0.25rem; /* GLYNAC uses subtle rounded corners */
 
-    /* Additional McKinsey-specific colors */
-    --gray-50: 220 13% 98%;
-    --gray-100: 220 13% 95%;
-    --gray-200: 220 13% 90%;
-    --gray-300: 220 13% 80%;
-    --gray-400: 220 13% 65%;
-    --gray-500: 220 13% 45%;
-    --gray-600: 220 13% 35%;
-    --gray-700: 220 13% 25%;
-    --gray-800: 220 13% 18%;
-    --gray-900: 220 13% 12%;
+    /* GLYNAC-specific colors */
+    --glynac-50: 210 100% 98%;
+    --glynac-100: 210 100% 95%;
+    --glynac-200: 210 100% 90%;
+    --glynac-300: 210 100% 80%;
+    --glynac-400: 210 100% 70%;
+    --glynac-500: 210 100% 56%; /* Primary blue */
+    --glynac-600: 210 50% 50%; /* Steel blue */
+    --glynac-700: 240 100% 35%;
+    --glynac-800: 240 100% 25%; /* Midnight blue */
+    --glynac-900: 240 100% 15%;
 
-    --sidebar-background: 220 13% 98%;
-    --sidebar-foreground: 220 13% 18%;
-    --sidebar-primary: 220 100% 20%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 35 91% 32%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 220 13% 90%;
-    --sidebar-ring: 220 100% 20%;
+    --sidebar-background: var(--glynac-white);
+    --sidebar-foreground: var(--glynac-midnight-blue);
+    --sidebar-primary: var(--glynac-blue);
+    --sidebar-primary-foreground: var(--glynac-white);
+    --sidebar-accent: var(--glynac-steel-blue);
+    --sidebar-accent-foreground: var(--glynac-white);
+    --sidebar-border: var(--glynac-light-gray);
+    --sidebar-ring: var(--glynac-blue);
   }
 
   .dark {
-    --background: 220 13% 12%;
-    --foreground: 220 13% 98%;
+    --background: var(--glynac-midnight-blue);
+    --foreground: var(--glynac-white);
 
-    --card: 220 13% 12%;
-    --card-foreground: 220 13% 98%;
+    --card: var(--glynac-midnight-blue);
+    --card-foreground: var(--glynac-white);
 
-    --popover: 220 13% 12%;
-    --popover-foreground: 220 13% 98%;
+    --popover: var(--glynac-midnight-blue);
+    --popover-foreground: var(--glynac-white);
 
-    --primary: 220 100% 20%;
-    --primary-foreground: 0 0% 100%;
+    --primary: var(--glynac-blue);
+    --primary-foreground: var(--glynac-white);
 
-    --secondary: 220 13% 98%;
-    --secondary-foreground: 220 13% 12%;
+    --secondary: var(--glynac-steel-blue);
+    --secondary-foreground: var(--glynac-white);
 
-    --muted: 220 13% 25%;
-    --muted-foreground: 220 13% 65%;
+    --muted: 240 100% 20%;
+    --muted-foreground: var(--glynac-light-gray);
 
-    --accent: 35 91% 32%;
-    --accent-foreground: 0 0% 100%;
+    --accent: var(--glynac-steel-blue);
+    --accent-foreground: var(--glynac-white);
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: var(--glynac-white);
 
-    --border: 220 13% 25%;
-    --input: 220 13% 25%;
-    --ring: 220 100% 20%;
+    --border: 240 100% 20%;
+    --input: 240 100% 20%;
+    --ring: var(--glynac-blue);
 
-    --sidebar-background: 220 13% 12%;
-    --sidebar-foreground: 220 13% 98%;
-    --sidebar-primary: 220 100% 20%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 35 91% 32%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 220 13% 25%;
-    --sidebar-ring: 220 100% 20%;
+    --sidebar-background: var(--glynac-midnight-blue);
+    --sidebar-foreground: var(--glynac-white);
+    --sidebar-primary: var(--glynac-blue);
+    --sidebar-primary-foreground: var(--glynac-white);
+    --sidebar-accent: var(--glynac-steel-blue);
+    --sidebar-accent-foreground: var(--glynac-white);
+    --sidebar-border: 240 100% 20%;
+    --sidebar-ring: var(--glynac-blue);
   }
 }
 
@@ -109,21 +116,58 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight;
+    @apply font-futura tracking-tight;
   }
 
   p {
-    @apply leading-relaxed;
+    @apply leading-relaxed font-arial;
   }
 }
 
-/* McKinsey-style typography */
+/* GLYNAC Typography System */
 @layer utilities {
-  .font-serif {
-    font-family: "Georgia", "Times New Roman", serif;
+  .font-futura {
+    font-family: "Futura", "Futura PT", "Avenir", "Century Gothic", sans-serif;
   }
 
-  .font-sans {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+  .font-arial {
+    font-family: "Arial", "Helvetica", sans-serif;
+  }
+
+  /* GLYNAC-specific text styles */
+  .text-glynac-blue {
+    color: #1E90FF;
+  }
+
+  .text-glynac-steel-blue {
+    color: #4682B4;
+  }
+
+  .text-glynac-midnight-blue {
+    color: #191970;
+  }
+
+  .bg-glynac-blue {
+    background-color: #1E90FF;
+  }
+
+  .bg-glynac-steel-blue {
+    background-color: #4682B4;
+  }
+
+  .bg-glynac-midnight-blue {
+    background-color: #191970;
+  }
+
+  .border-glynac-blue {
+    border-color: #1E90FF;
+  }
+
+  .border-glynac-steel-blue {
+    border-color: #4682B4;
+  }
+
+  .border-glynac-midnight-blue {
+    border-color: #191970;
   }
 }

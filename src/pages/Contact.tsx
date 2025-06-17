@@ -59,18 +59,18 @@ const Contact = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
+      <section className="bg-gradient-to-br from-glynac-midnight-blue to-glynac-steel-blue text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <div className="bg-amber-500 p-4 rounded-lg">
-                <Mail size={48} className="text-slate-900" />
+              <div className="bg-glynac-blue p-4 rounded-lg">
+                <Mail size={48} className="text-white" />
               </div>
             </div>
-            <h1 className="text-5xl font-bold mb-6">
-              Get in <span className="text-amber-400">Touch</span>
+            <h1 className="text-5xl font-futura font-bold mb-6">
+              Get in <span className="text-glynac-blue">Touch</span>
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed mb-8">
+            <p className="text-xl text-glynac-light-gray leading-relaxed mb-8 font-arial">
               Ready to transform your organization? Let's discuss how we can help you 
               achieve your business goals and drive sustainable success.
             </p>
@@ -82,8 +82,8 @@ const Contact = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">How Can We Help?</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">How Can We Help?</h2>
+            <p className="text-xl text-glynac-steel-blue max-w-3xl mx-auto font-arial">
               Choose the best way to reach us based on your needs. Our team is ready 
               to assist you with any questions or inquiries.
             </p>
@@ -91,24 +91,24 @@ const Contact = () => {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {contactMethods.map((method, index) => (
-              <div key={index} className="bg-slate-50 rounded-2xl p-8 hover:shadow-lg transition-all">
+              <div key={index} className="bg-glynac-light-gray rounded-2xl p-8 hover:shadow-lg transition-all">
                 <div className="flex items-center mb-6">
-                  <div className="bg-amber-100 p-3 rounded-lg">
-                    <method.icon className="text-amber-600" size={24} />
+                  <div className="bg-glynac-blue p-3 rounded-lg">
+                    <method.icon className="text-white" size={24} />
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900 ml-4">{method.title}</h3>
+                  <h3 className="text-xl font-futura font-semibold text-glynac-midnight-blue ml-4">{method.title}</h3>
                 </div>
-                <p className="text-gray-600 mb-6">{method.description}</p>
+                <p className="text-glynac-steel-blue mb-6 font-arial">{method.description}</p>
                 <div className="space-y-3">
                   <div className="flex items-center">
-                    <Mail className="h-4 w-4 text-amber-500 mr-3" />
-                    <a href={`mailto:${method.email}`} className="text-slate-900 hover:text-amber-600">
+                    <Mail className="h-4 w-4 text-glynac-blue mr-3" />
+                    <a href={`mailto:${method.email}`} className="text-glynac-midnight-blue hover:text-glynac-blue font-arial">
                       {method.email}
                     </a>
                   </div>
                   <div className="flex items-center">
-                    <Phone className="h-4 w-4 text-amber-500 mr-3" />
-                    <a href={`tel:${method.phone}`} className="text-slate-900 hover:text-amber-600">
+                    <Phone className="h-4 w-4 text-glynac-blue mr-3" />
+                    <a href={`tel:${method.phone}`} className="text-glynac-midnight-blue hover:text-glynac-blue font-arial">
                       {method.phone}
                     </a>
                   </div>
@@ -120,11 +120,11 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-glynac-light-gray">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Send Us a Message</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">Send Us a Message</h2>
+            <p className="text-xl text-glynac-steel-blue max-w-3xl mx-auto font-arial">
               Fill out the form below and we'll get back to you within 24 hours. 
               We're here to help you achieve your transformation goals.
             </p>
@@ -133,7 +133,7 @@ const Contact = () => {
           <form className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
-                <label htmlFor="firstName" className="block text-sm font-medium text-slate-900 mb-2">
+                <label htmlFor="firstName" className="block text-sm font-medium text-glynac-midnight-blue mb-2 font-arial">
                   First Name *
                 </label>
                 <input
@@ -141,11 +141,11 @@ const Contact = () => {
                   id="firstName"
                   name="firstName"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-glynac-light-gray rounded-lg focus:ring-2 focus:ring-glynac-blue focus:border-transparent font-arial"
                 />
               </div>
               <div>
-                <label htmlFor="lastName" className="block text-sm font-medium text-slate-900 mb-2">
+                <label htmlFor="lastName" className="block text-sm font-medium text-glynac-midnight-blue mb-2 font-arial">
                   Last Name *
                 </label>
                 <input
@@ -153,14 +153,14 @@ const Contact = () => {
                   id="lastName"
                   name="lastName"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-glynac-light-gray rounded-lg focus:ring-2 focus:ring-glynac-blue focus:border-transparent font-arial"
                 />
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-900 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-glynac-midnight-blue mb-2 font-arial">
                   Email Address *
                 </label>
                 <input
@@ -168,24 +168,24 @@ const Contact = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-glynac-light-gray rounded-lg focus:ring-2 focus:ring-glynac-blue focus:border-transparent font-arial"
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-slate-900 mb-2">
+                <label htmlFor="phone" className="block text-sm font-medium text-glynac-midnight-blue mb-2 font-arial">
                   Phone Number
                 </label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-glynac-light-gray rounded-lg focus:ring-2 focus:ring-glynac-blue focus:border-transparent font-arial"
                 />
               </div>
             </div>
 
             <div className="mb-6">
-              <label htmlFor="company" className="block text-sm font-medium text-slate-900 mb-2">
+              <label htmlFor="company" className="block text-sm font-medium text-glynac-midnight-blue mb-2 font-arial">
                 Company Name *
               </label>
               <input
@@ -193,18 +193,18 @@ const Contact = () => {
                 id="company"
                 name="company"
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                className="w-full px-4 py-3 border border-glynac-light-gray rounded-lg focus:ring-2 focus:ring-glynac-blue focus:border-transparent font-arial"
               />
             </div>
 
             <div className="mb-6">
-              <label htmlFor="service" className="block text-sm font-medium text-slate-900 mb-2">
+              <label htmlFor="service" className="block text-sm font-medium text-glynac-midnight-blue mb-2 font-arial">
                 Service of Interest
               </label>
               <select
                 id="service"
                 name="service"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                className="w-full px-4 py-3 border border-glynac-light-gray rounded-lg focus:ring-2 focus:ring-glynac-blue focus:border-transparent font-arial"
               >
                 <option value="">Select a service</option>
                 <option value="strategy">Strategy & Transformation</option>
@@ -217,7 +217,7 @@ const Contact = () => {
             </div>
 
             <div className="mb-6">
-              <label htmlFor="message" className="block text-sm font-medium text-slate-900 mb-2">
+              <label htmlFor="message" className="block text-sm font-medium text-glynac-midnight-blue mb-2 font-arial">
                 Message *
               </label>
               <textarea
@@ -226,14 +226,14 @@ const Contact = () => {
                 rows={6}
                 required
                 placeholder="Tell us about your business challenges and how we can help..."
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                className="w-full px-4 py-3 border border-glynac-light-gray rounded-lg focus:ring-2 focus:ring-glynac-blue focus:border-transparent font-arial"
               ></textarea>
             </div>
 
             <div className="flex items-center justify-center">
               <button
                 type="submit"
-                className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold transition-colors flex items-center"
+                className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center font-arial"
               >
                 <Send className="h-5 w-5 mr-2" />
                 Send Message
@@ -247,8 +247,8 @@ const Contact = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Global Offices</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">Our Global Offices</h2>
+            <p className="text-xl text-glynac-steel-blue max-w-3xl mx-auto font-arial">
               Visit us at any of our global offices or reach out to schedule a meeting 
               with our local teams.
             </p>
@@ -256,34 +256,34 @@ const Contact = () => {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {offices.map((office, index) => (
-              <div key={index} className="bg-slate-50 rounded-xl p-6 hover:shadow-lg transition-all">
+              <div key={index} className="bg-glynac-light-gray rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="flex items-center mb-4">
-                  <Globe className="h-8 w-8 text-amber-500 mr-3" />
+                  <Globe className="h-8 w-8 text-glynac-blue mr-3" />
                   <div>
-                    <h3 className="text-xl font-semibold text-slate-900">{office.city}</h3>
-                    <p className="text-gray-600">{office.country}</p>
+                    <h3 className="text-xl font-futura font-semibold text-glynac-midnight-blue">{office.city}</h3>
+                    <p className="text-glynac-steel-blue font-arial">{office.country}</p>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-start">
-                    <MapPin className="h-4 w-4 text-amber-500 mr-3 mt-1" />
-                    <p className="text-gray-600 text-sm">{office.address}</p>
+                    <MapPin className="h-4 w-4 text-glynac-blue mr-3 mt-1" />
+                    <p className="text-glynac-steel-blue text-sm font-arial">{office.address}</p>
                   </div>
                   <div className="flex items-center">
-                    <Phone className="h-4 w-4 text-amber-500 mr-3" />
-                    <a href={`tel:${office.phone}`} className="text-slate-900 hover:text-amber-600 text-sm">
+                    <Phone className="h-4 w-4 text-glynac-blue mr-3" />
+                    <a href={`tel:${office.phone}`} className="text-glynac-midnight-blue hover:text-glynac-blue text-sm font-arial">
                       {office.phone}
                     </a>
                   </div>
                   <div className="flex items-center">
-                    <Mail className="h-4 w-4 text-amber-500 mr-3" />
-                    <a href={`mailto:${office.email}`} className="text-slate-900 hover:text-amber-600 text-sm">
+                    <Mail className="h-4 w-4 text-glynac-blue mr-3" />
+                    <a href={`mailto:${office.email}`} className="text-glynac-midnight-blue hover:text-glynac-blue text-sm font-arial">
                       {office.email}
                     </a>
                   </div>
                   <div className="flex items-center">
-                    <Clock className="h-4 w-4 text-amber-500 mr-3" />
-                    <p className="text-gray-600 text-sm">{office.hours}</p>
+                    <Clock className="h-4 w-4 text-glynac-blue mr-3" />
+                    <p className="text-glynac-steel-blue text-sm font-arial">{office.hours}</p>
                   </div>
                 </div>
               </div>
@@ -293,18 +293,18 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-glynac-midnight-blue to-glynac-steel-blue text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Start Your Transformation?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-futura font-bold mb-6">Ready to Start Your Transformation?</h2>
+          <p className="text-xl text-glynac-light-gray mb-8 max-w-3xl mx-auto font-arial">
             Let's discuss how our expertise can help you overcome challenges, 
             seize opportunities, and achieve sustainable growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold transition-colors">
-              Schedule a Consultation
+            <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+              INQUIRE NOW
             </button>
-            <button className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 px-8 py-4 rounded-lg font-semibold transition-all">
+            <button className="border-2 border-glynac-blue text-glynac-blue hover:bg-glynac-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all font-arial">
               Download Brochure
             </button>
           </div>

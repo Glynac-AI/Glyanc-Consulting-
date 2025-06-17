@@ -119,11 +119,11 @@ const ServicesOverview = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Capabilities Section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-[#0B1F51] sm:text-4xl">
-            Our Capabilities
+          <h2 className="text-3xl font-futura font-bold tracking-tight text-glynac-midnight-blue sm:text-4xl">
+            PROBLEM-FIXER
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            We help organizations solve their most complex challenges and achieve sustainable growth through our comprehensive consulting services.
+          <p className="mt-4 text-lg text-glynac-midnight-blue max-w-3xl mx-auto font-arial">
+            FIX YOUR PROBLEM. We help organizations solve their most complex challenges and achieve sustainable growth through our comprehensive consulting services.
           </p>
         </div>
 
@@ -131,17 +131,17 @@ const ServicesOverview = () => {
         <div className="mb-24">
           <Accordion type="single" collapsible className="space-y-4">
             {capabilities.map((capability, index) => (
-              <AccordionItem key={capability.title} value={`item-${index}`} className="border border-gray-200 rounded-sm">
+              <AccordionItem key={capability.title} value={`item-${index}`} className="border border-glynac-light-gray rounded">
                 <AccordionTrigger className="px-8 py-6 hover:no-underline">
                   <div className="flex items-start w-full">
                     <div className="flex-shrink-0">
-                      <capability.icon className="h-8 w-8 text-[#0B1F51]" />
+                      <capability.icon className="h-8 w-8 text-glynac-blue" />
                     </div>
                     <div className="ml-4 text-left flex-1">
-                      <h3 className="text-xl font-semibold text-[#0B1F51] mb-2">
+                      <h3 className="text-xl font-futura font-semibold text-glynac-midnight-blue mb-2">
                         {capability.title}
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-glynac-steel-blue font-arial">
                         {capability.description}
                       </p>
                     </div>
@@ -150,14 +150,14 @@ const ServicesOverview = () => {
                 <AccordionContent className="px-8 pb-6">
                   <div className="grid lg:grid-cols-2 gap-8">
                     <div>
-                      <h4 className="font-semibold text-[#0B1F51] mb-3">Overview</h4>
-                      <p className="text-gray-600 mb-6">{capability.detailedDescription}</p>
+                      <h4 className="font-futura font-semibold text-glynac-midnight-blue mb-3">Overview</h4>
+                      <p className="text-glynac-steel-blue mb-6 font-arial">{capability.detailedDescription}</p>
                       
-                      <h4 className="font-semibold text-[#0B1F51] mb-3">Key Benefits</h4>
+                      <h4 className="font-futura font-semibold text-glynac-midnight-blue mb-3">Key Benefits</h4>
                       <ul className="space-y-2 mb-6">
                         {capability.keyBenefits.map((benefit, idx) => (
-                          <li key={idx} className="flex items-start text-gray-600">
-                            <ChevronRight className="h-4 w-4 text-[#E31837] mr-2 mt-0.5 flex-shrink-0" />
+                          <li key={idx} className="flex items-start text-glynac-steel-blue font-arial">
+                            <ChevronRight className="h-4 w-4 text-glynac-blue mr-2 mt-0.5 flex-shrink-0" />
                             {benefit}
                           </li>
                         ))}
@@ -165,19 +165,19 @@ const ServicesOverview = () => {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-[#0B1F51] mb-3">Our Services</h4>
+                      <h4 className="font-futura font-semibold text-glynac-midnight-blue mb-3">Our Services</h4>
                       <ul className="space-y-2 mb-6">
                         {capability.services.map((service) => (
-                          <li key={service} className="flex items-center text-gray-600">
-                            <ChevronRight className="h-4 w-4 text-[#E31837] mr-2" />
+                          <li key={service} className="flex items-center text-glynac-steel-blue font-arial">
+                            <ChevronRight className="h-4 w-4 text-glynac-blue mr-2" />
                             {service}
                           </li>
                         ))}
                       </ul>
                       
-                      <div className="bg-gray-50 p-4 rounded-sm">
-                        <h4 className="font-semibold text-[#0B1F51] mb-2">Case Study</h4>
-                        <p className="text-gray-600 text-sm">{capability.caseStudy}</p>
+                      <div className="bg-glynac-light-gray p-4 rounded">
+                        <h4 className="font-futura font-semibold text-glynac-midnight-blue mb-2">Case Study</h4>
+                        <p className="text-glynac-steel-blue text-sm font-arial">{capability.caseStudy}</p>
                       </div>
                     </div>
                   </div>
@@ -189,10 +189,10 @@ const ServicesOverview = () => {
 
         {/* Industries Section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-[#0B1F51] sm:text-4xl">
+          <h2 className="text-3xl font-futura font-bold tracking-tight text-glynac-midnight-blue sm:text-4xl">
             Industries We Serve
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg text-glynac-steel-blue max-w-3xl mx-auto font-arial">
             We bring deep industry expertise and proven methodologies to help organizations across sectors achieve their strategic objectives.
           </p>
         </div>
@@ -202,16 +202,16 @@ const ServicesOverview = () => {
             <a
               key={industry.name}
               href={industry.href}
-              className="group block bg-white border border-gray-200 rounded-sm p-6 hover:shadow-lg transition-all"
+              className="group block bg-white border border-glynac-light-gray rounded p-6 hover:shadow-lg transition-all"
             >
-              <h3 className="text-xl font-semibold text-[#0B1F51] group-hover:text-[#E31837] transition-colors">
+              <h3 className="text-xl font-futura font-semibold text-glynac-midnight-blue group-hover:text-glynac-blue transition-colors">
                 {industry.name}
               </h3>
-              <p className="mt-2 text-gray-600">
+              <p className="mt-2 text-glynac-steel-blue font-arial">
                 {industry.description}
               </p>
-              <div className="mt-4 flex items-center text-[#0B1F51] group-hover:text-[#E31837]">
-                <span className="text-sm font-medium">Learn more</span>
+              <div className="mt-4 flex items-center text-glynac-midnight-blue group-hover:text-glynac-blue">
+                <span className="text-sm font-medium font-arial">Learn more</span>
                 <ChevronRight className="ml-1 h-4 w-4" />
               </div>
             </a>
@@ -220,18 +220,18 @@ const ServicesOverview = () => {
 
         {/* CTA Section */}
         <div className="mt-24 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-[#0B1F51] sm:text-4xl">
+          <h2 className="text-3xl font-futura font-bold tracking-tight text-glynac-midnight-blue sm:text-4xl">
             Ready to Transform Your Business?
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg text-glynac-steel-blue max-w-3xl mx-auto font-arial">
             Let's discuss how we can help you achieve your strategic objectives and drive sustainable growth.
           </p>
           <div className="mt-8">
             <a
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-sm text-white bg-[#0B1F51] hover:bg-[#0B1F51]/90 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded text-white bg-glynac-blue hover:bg-glynac-steel-blue transition-colors font-arial"
             >
-              Schedule a Consultation
+              INQUIRE NOW
             </a>
           </div>
         </div>

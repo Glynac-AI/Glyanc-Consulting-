@@ -175,12 +175,12 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav className="bg-white border-b border-glynac-light-gray sticky top-0 z-50">
       <div className="max-w-[1920px] mx-auto">
         {/* Top bar with contact and language */}
-        <div className="bg-[#0B1F51] text-white">
+        <div className="bg-glynac-midnight-blue text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-10 items-center text-sm">
+            <div className="flex justify-between h-10 items-center text-sm font-arial">
               <div className="flex space-x-6">
                 <a href="/contact" className="text-white/90 hover:text-white">Contact Us</a>
                 <a href="/locations" className="text-white/90 hover:text-white">Global Locations</a>
@@ -201,9 +201,9 @@ const Navigation = () => {
           <div className="flex justify-between h-20">
             <div className="flex items-center">
               <Link to="/" className="flex-shrink-0">
-                <div className="text-2xl font-bold tracking-tight">
-                  <span className="text-[#0B1F51]">Glynac</span>
-                  <span className="text-[#E31837]">Consulting</span>
+                <div className="text-2xl font-futura font-bold tracking-tight">
+                  <span className="text-glynac-midnight-blue">GLYNAC</span>
+                  <span className="text-glynac-blue">CONSULTING</span>
                 </div>
               </Link>
             </div>
@@ -218,7 +218,7 @@ const Navigation = () => {
                   onMouseLeave={() => handleDropdownLeave(category)}
                 >
                   <button
-                    className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-[#0B1F51] flex items-center"
+                    className="px-3 py-2 text-sm font-medium text-glynac-midnight-blue hover:text-glynac-blue flex items-center font-arial"
                     onClick={() => handleDropdownClick(category)}
                   >
                     {category}
@@ -227,25 +227,25 @@ const Navigation = () => {
                   
                   {/* Enhanced Dropdown menu */}
                   {isDropdownOpen(category) && (
-                    <div className="absolute left-0 top-full w-80 bg-white border border-gray-200 rounded-sm shadow-lg py-4">
-                      <div className="px-4 pb-3 border-b border-gray-100 mb-3">
-                        <p className="text-sm text-gray-600">{data.description}</p>
+                    <div className="absolute left-0 top-full w-80 bg-white border border-glynac-light-gray rounded shadow-lg py-4">
+                      <div className="px-4 pb-3 border-b border-glynac-light-gray mb-3">
+                        <p className="text-sm text-glynac-midnight-blue font-arial">{data.description}</p>
                       </div>
                       <div className="space-y-1">
                         {data.items.map((item) => (
                           <Link
                             key={item.name}
                             to={item.href}
-                            className="flex items-start px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0B1F51] transition-colors"
+                            className="flex items-start px-4 py-3 text-sm text-glynac-midnight-blue hover:bg-glynac-light-gray hover:text-glynac-blue transition-colors font-arial"
                             onClick={() => {
                               setActiveDropdown(null);
                               setClickedDropdown(null);
                             }}
                           >
-                            <item.icon className="h-4 w-4 text-[#E31837] mr-3 mt-0.5 flex-shrink-0" />
+                            <item.icon className="h-4 w-4 text-glynac-blue mr-3 mt-0.5 flex-shrink-0" />
                             <div>
                               <div className="font-medium">{item.name}</div>
-                              <div className="text-xs text-gray-500 mt-1">{item.description}</div>
+                              <div className="text-xs text-glynac-steel-blue mt-1">{item.description}</div>
                             </div>
                           </Link>
                         ))}
@@ -254,8 +254,8 @@ const Navigation = () => {
                   )}
                 </div>
               ))}
-              <button className="bg-[#0B1F51] hover:bg-[#0B1F51]/90 text-white px-6 py-2.5 rounded-sm font-medium transition-all">
-                Schedule Consultation
+              <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-6 py-2.5 rounded font-medium transition-all font-arial">
+                INQUIRE NOW
               </button>
             </div>
 
@@ -263,7 +263,7 @@ const Navigation = () => {
             <div className="lg:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-gray-600 hover:text-[#0B1F51]"
+                className="text-glynac-midnight-blue hover:text-glynac-blue"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -273,35 +273,35 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden border-t border-gray-200">
+          <div className="lg:hidden border-t border-glynac-light-gray">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
               {Object.entries(navigation).map(([category, data]) => (
                 <div key={category} className="space-y-1">
-                  <div className="px-3 py-2 text-base font-medium text-gray-700">
+                  <div className="px-3 py-2 text-base font-medium text-glynac-midnight-blue font-futura">
                     {category}
                   </div>
-                  <div className="px-3 pb-2 text-sm text-gray-500">
+                  <div className="px-3 pb-2 text-sm text-glynac-steel-blue font-arial">
                     {data.description}
                   </div>
                   {data.items.map((item) => (
                     <Link
                       key={item.name}
                       to={item.href}
-                      className="flex items-start pl-6 pr-3 py-2 text-base font-medium text-gray-600 hover:text-[#0B1F51] hover:bg-gray-50"
+                      className="flex items-start pl-6 pr-3 py-2 text-base font-medium text-glynac-midnight-blue hover:text-glynac-blue hover:bg-glynac-light-gray font-arial"
                       onClick={() => setIsOpen(false)}
                     >
-                      <item.icon className="h-4 w-4 text-[#E31837] mr-3 mt-1 flex-shrink-0" />
+                      <item.icon className="h-4 w-4 text-glynac-blue mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <div>{item.name}</div>
-                        <div className="text-sm text-gray-500 mt-1">{item.description}</div>
+                        <div className="text-sm text-glynac-steel-blue mt-1">{item.description}</div>
                       </div>
                     </Link>
                   ))}
                 </div>
               ))}
               <div className="px-3 py-4">
-                <button className="w-full bg-[#0B1F51] hover:bg-[#0B1F51]/90 text-white px-6 py-2.5 rounded-sm font-medium">
-                  Schedule Consultation
+                <button className="w-full bg-glynac-blue hover:bg-glynac-steel-blue text-white px-6 py-2.5 rounded font-medium font-arial">
+                  INQUIRE NOW
                 </button>
               </div>
             </div>

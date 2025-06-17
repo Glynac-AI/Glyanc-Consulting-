@@ -88,13 +88,13 @@ const About = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
+      <section className="bg-gradient-to-br from-glynac-midnight-blue to-glynac-steel-blue text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">
-              From <span className="text-amber-400">Heritage</span> to <span className="text-amber-400">Innovation</span>
+            <h1 className="text-5xl font-futura font-bold mb-6">
+              From <span className="text-glynac-blue">Heritage</span> to <span className="text-glynac-blue">Innovation</span>
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-glynac-light-gray leading-relaxed font-arial">
               Three decades of cultural expertise meets cutting-edge AI to transform how organizations build inclusive, high-performing cultures.
             </p>
           </div>
@@ -106,8 +106,8 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">Our Story</h2>
-              <div className="space-y-6 text-gray-700">
+              <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-6">Our Story</h2>
+              <div className="space-y-6 text-glynac-steel-blue font-arial">
                 <p className="text-lg">
                   What began as Language & Culture Worldwide (LCW) in 1995 has evolved into Glynac, 
                   the world's most advanced culture intelligence platform.
@@ -136,26 +136,26 @@ const About = () => {
       </section>
 
       {/* Timeline */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-glynac-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Journey</h2>
-            <p className="text-xl text-gray-600">Key milestones in our evolution</p>
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">Our Journey</h2>
+            <p className="text-xl text-glynac-steel-blue font-arial">Key milestones in our evolution</p>
           </div>
 
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-amber-400 h-full"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-glynac-blue h-full"></div>
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
                 <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                   <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? 'lg:pr-12' : 'lg:pl-12'}`}>
                     <div className="bg-white p-6 rounded-xl shadow-lg">
-                      <div className="text-amber-600 font-bold text-lg mb-2">{milestone.year}</div>
-                      <h3 className="text-xl font-semibold text-slate-900 mb-3">{milestone.title}</h3>
-                      <p className="text-gray-600">{milestone.description}</p>
+                      <div className="text-glynac-blue font-futura font-bold text-lg mb-2">{milestone.year}</div>
+                      <h3 className="text-xl font-futura font-semibold text-glynac-midnight-blue mb-3">{milestone.title}</h3>
+                      <p className="text-glynac-steel-blue font-arial">{milestone.description}</p>
                     </div>
                   </div>
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-amber-400 rounded-full border-4 border-white"></div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-glynac-blue rounded-full border-4 border-white"></div>
                 </div>
               ))}
             </div>
@@ -167,8 +167,8 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Leadership Team</h2>
-            <p className="text-xl text-gray-600">Experts who bridge human insight and technological innovation</p>
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">Leadership Team</h2>
+            <p className="text-xl text-glynac-steel-blue font-arial">Experts who bridge human insight and technological innovation</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -181,9 +181,9 @@ const About = () => {
                     className="w-48 h-48 mx-auto rounded-full object-cover shadow-lg group-hover:shadow-xl transition-shadow"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">{leader.name}</h3>
-                <div className="text-amber-600 font-medium mb-3">{leader.role}</div>
-                <p className="text-gray-600">{leader.bio}</p>
+                <h3 className="text-xl font-futura font-semibold text-glynac-midnight-blue mb-2">{leader.name}</h3>
+                <div className="text-glynac-blue font-medium mb-3 font-arial">{leader.role}</div>
+                <p className="text-glynac-steel-blue font-arial">{leader.bio}</p>
               </div>
             ))}
           </div>
@@ -191,11 +191,11 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-glynac-midnight-blue to-glynac-steel-blue text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Values</h2>
-            <p className="text-xl text-gray-300">The principles that guide everything we do</p>
+            <h2 className="text-4xl font-futura font-bold mb-4">Our Values</h2>
+            <p className="text-xl text-glynac-light-gray font-arial">The principles that guide everything we do</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -206,11 +206,11 @@ const About = () => {
               { icon: Lightbulb, title: "Innovative", description: "Always pushing the boundaries of what's possible" }
             ].map((value, index) => (
               <div key={index} className="text-center">
-                <div className="bg-amber-500 p-4 rounded-lg mb-4 mx-auto w-fit">
-                  <value.icon size={32} className="text-slate-900" />
+                <div className="bg-glynac-blue p-4 rounded-lg mb-4 mx-auto w-fit">
+                  <value.icon size={32} className="text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                <p className="text-gray-300">{value.description}</p>
+                <h3 className="text-xl font-futura font-semibold mb-3">{value.title}</h3>
+                <p className="text-glynac-light-gray font-arial">{value.description}</p>
               </div>
             ))}
           </div>
@@ -218,22 +218,22 @@ const About = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-glynac-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-xl text-gray-600">Everything you need to know about Glynac and our culture intelligence platform</p>
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-glynac-steel-blue font-arial">Everything you need to know about Glynac and our culture intelligence platform</p>
           </div>
 
           <div className="max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`faq-${index}`} className="bg-white border border-gray-200 rounded-sm">
+                <AccordionItem key={index} value={`faq-${index}`} className="bg-white border border-glynac-light-gray rounded">
                   <AccordionTrigger className="px-6 py-4 hover:no-underline text-left">
-                    <h3 className="text-lg font-semibold text-slate-900 pr-8">{faq.question}</h3>
+                    <h3 className="text-lg font-futura font-semibold text-glynac-midnight-blue pr-8">{faq.question}</h3>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4">
-                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                    <p className="text-glynac-steel-blue leading-relaxed font-arial">{faq.answer}</p>
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -241,9 +241,9 @@ const About = () => {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-4">Still have questions? We're here to help.</p>
-            <button className="bg-[#0B1F51] hover:bg-[#0B1F51]/90 text-white px-8 py-3 rounded-sm font-medium transition-colors">
-              Contact Our Team
+            <p className="text-glynac-steel-blue mb-4 font-arial">Still have questions? We're here to help.</p>
+            <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-3 rounded font-medium transition-colors font-arial">
+              INQUIRE NOW
             </button>
           </div>
         </div>

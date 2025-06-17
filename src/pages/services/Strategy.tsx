@@ -72,26 +72,26 @@ const Strategy = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
+      <section className="bg-gradient-to-br from-glynac-midnight-blue to-glynac-steel-blue text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <div className="bg-amber-500 p-4 rounded-lg">
-                <Target size={48} className="text-slate-900" />
+              <div className="bg-glynac-blue p-4 rounded-lg">
+                <Target size={48} className="text-white" />
               </div>
             </div>
-            <h1 className="text-5xl font-bold mb-6">
-              Strategy & <span className="text-amber-400">Transformation</span>
+            <h1 className="text-5xl font-futura font-bold mb-6">
+              Strategy & <span className="text-glynac-blue">Transformation</span>
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed mb-8">
+            <p className="text-xl text-glynac-light-gray leading-relaxed mb-8 font-arial">
               We help organizations define their vision, develop winning strategies, and drive successful transformations 
               that create sustainable competitive advantage and long-term value.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold transition-colors">
-                Schedule Strategy Consultation
+              <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+                INQUIRE NOW
               </button>
-              <button className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 px-8 py-4 rounded-lg font-semibold transition-all">
+              <button className="border-2 border-glynac-blue text-glynac-blue hover:bg-glynac-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all font-arial">
                 Download Strategy Guide
               </button>
             </div>
@@ -103,8 +103,8 @@ const Strategy = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Strategic Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">Our Strategic Services</h2>
+            <p className="text-xl text-glynac-steel-blue max-w-3xl mx-auto font-arial">
               Comprehensive strategic consulting services designed to help organizations navigate complex challenges 
               and achieve sustainable competitive advantage.
             </p>
@@ -112,18 +112,18 @@ const Strategy = () => {
 
           <div className="grid lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-slate-50 rounded-2xl p-8 hover:shadow-lg transition-all">
+              <div key={index} className="bg-glynac-light-gray rounded-2xl p-8 hover:shadow-lg transition-all">
                 <div className="flex items-start space-x-6">
-                  <div className="bg-amber-100 p-4 rounded-lg">
-                    <Target className="text-amber-600" size={32} />
+                  <div className="bg-glynac-blue p-4 rounded-lg">
+                    <Target className="text-white" size={32} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-slate-900 mb-4">{service.title}</h3>
-                    <p className="text-gray-600 mb-6">{service.description}</p>
+                    <h3 className="text-2xl font-futura font-semibold text-glynac-midnight-blue mb-4">{service.title}</h3>
+                    <p className="text-glynac-steel-blue mb-6 font-arial">{service.description}</p>
                     <ul className="space-y-3">
                       {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start text-gray-700">
-                          <CheckCircle className="h-5 w-5 text-amber-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <li key={idx} className="flex items-start text-glynac-steel-blue font-arial">
+                          <CheckCircle className="h-5 w-5 text-glynac-blue mr-3 mt-0.5 flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
@@ -137,11 +137,11 @@ const Strategy = () => {
       </section>
 
       {/* Our Approach */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-glynac-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Strategic Approach</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">Our Strategic Approach</h2>
+            <p className="text-xl text-glynac-steel-blue max-w-3xl mx-auto font-arial">
               A proven methodology that combines deep industry expertise with data-driven insights to deliver 
               actionable strategies that drive real results.
             </p>
@@ -155,11 +155,11 @@ const Strategy = () => {
               { step: "04", title: "Execution Support", description: "Ongoing guidance and support to ensure successful strategy execution and value creation" }
             ].map((phase, index) => (
               <div key={index} className="text-center">
-                <div className="bg-amber-500 text-slate-900 w-16 h-16 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                <div className="bg-glynac-blue text-white w-16 h-16 rounded-full flex items-center justify-center text-xl font-futura font-bold mx-auto mb-4">
                   {phase.step}
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">{phase.title}</h3>
-                <p className="text-gray-600">{phase.description}</p>
+                <h3 className="text-xl font-futura font-semibold text-glynac-midnight-blue mb-3">{phase.title}</h3>
+                <p className="text-glynac-steel-blue font-arial">{phase.description}</p>
               </div>
             ))}
           </div>
@@ -170,8 +170,8 @@ const Strategy = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Success Stories</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">Success Stories</h2>
+            <p className="text-xl text-glynac-steel-blue max-w-3xl mx-auto font-arial">
               Real-world examples of how our strategic consulting has helped organizations achieve 
               transformative results and sustainable competitive advantage.
             </p>
@@ -179,23 +179,23 @@ const Strategy = () => {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {caseStudies.map((study, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
+              <div key={index} className="bg-white border border-glynac-light-gray rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="flex items-center mb-4">
-                  <Award className="h-8 w-8 text-amber-500 mr-3" />
-                  <h3 className="text-xl font-semibold text-slate-900">{study.title}</h3>
+                  <Award className="h-8 w-8 text-glynac-blue mr-3" />
+                  <h3 className="text-xl font-futura font-semibold text-glynac-midnight-blue">{study.title}</h3>
                 </div>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-slate-900 mb-2">Challenge</h4>
-                    <p className="text-gray-600 text-sm">{study.challenge}</p>
+                    <h4 className="font-futura font-semibold text-glynac-midnight-blue mb-2">Challenge</h4>
+                    <p className="text-glynac-steel-blue text-sm font-arial">{study.challenge}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-900 mb-2">Solution</h4>
-                    <p className="text-gray-600 text-sm">{study.solution}</p>
+                    <h4 className="font-futura font-semibold text-glynac-midnight-blue mb-2">Solution</h4>
+                    <p className="text-glynac-steel-blue text-sm font-arial">{study.solution}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-900 mb-2">Results</h4>
-                    <p className="text-gray-600 text-sm">{study.results}</p>
+                    <h4 className="font-futura font-semibold text-glynac-midnight-blue mb-2">Results</h4>
+                    <p className="text-glynac-steel-blue text-sm font-arial">{study.results}</p>
                   </div>
                 </div>
               </div>
@@ -205,18 +205,18 @@ const Strategy = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-glynac-midnight-blue to-glynac-steel-blue text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Strategy?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-futura font-bold mb-6">Ready to Transform Your Strategy?</h2>
+          <p className="text-xl text-glynac-light-gray mb-8 max-w-3xl mx-auto font-arial">
             Let's discuss how our strategic consulting services can help you navigate complex challenges 
             and achieve sustainable competitive advantage.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold transition-colors">
-              Schedule Free Consultation
+            <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+              INQUIRE NOW
             </button>
-            <button className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 px-8 py-4 rounded-lg font-semibold transition-all">
+            <button className="border-2 border-glynac-blue text-glynac-blue hover:bg-glynac-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all font-arial">
               Download Strategy Framework
             </button>
           </div>

@@ -1,57 +1,96 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import { FileText, Award, TrendingUp, Users, BarChart3, CheckCircle, ArrowRight, Building2, Globe, Zap } from "lucide-react";
+import { Award, TrendingUp, Users, BarChart3, CheckCircle, ArrowRight, Building2, Globe, Zap, Target, Heart } from "lucide-react";
 
 const CaseStudies = () => {
   const caseStudies = [
     {
-      title: "Global Bank Digital Transformation",
+      title: "Global Financial Institution",
       industry: "Financial Services",
-      challenge: "Needed to modernize legacy systems and improve customer experience",
-      solution: "Digital transformation with customer-centric design and technology modernization",
-      results: "40% improvement in customer satisfaction, 30% reduction in operational costs, successful digital platform launch",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800&h=400"
+      challenge: "Needed to modernize legacy systems and improve customer experience while maintaining regulatory compliance",
+      solution: "Comprehensive digital transformation with customer-centric design and technology modernization",
+      results: [
+        "40% improvement in customer satisfaction",
+        "30% reduction in operational costs",
+        "Successful digital platform launch",
+        "100% regulatory compliance maintained"
+      ],
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800&h=600"
     },
     {
-      title: "Manufacturing Company Operations Excellence",
-      industry: "Manufacturing",
-      challenge: "High operational costs and inconsistent quality across 15 facilities",
-      solution: "Implemented Lean Six Sigma program with digital transformation",
-      results: "25% cost reduction, 40% quality improvement, 30% productivity increase",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800&h=400"
-    },
-    {
-      title: "Healthcare Provider Patient Experience",
+      title: "Healthcare System Transformation",
       industry: "Healthcare",
-      challenge: "Long patient wait times and operational inefficiencies",
-      solution: "Process redesign with performance management system",
-      results: "50% reduction in wait times, 25% improvement in patient satisfaction, 20% cost savings",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&q=80&w=800&h=400"
+      challenge: "Inefficient patient care processes and poor care coordination across multiple facilities",
+      solution: "Patient experience redesign with digital health platform implementation and process optimization",
+      results: [
+        "35% improvement in patient satisfaction",
+        "40% reduction in wait times",
+        "Enhanced care coordination",
+        "Improved clinical outcomes"
+      ],
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&q=80&w=800&h=600"
     },
     {
-      title: "Retail Chain Supply Chain Optimization",
+      title: "Manufacturing Excellence Program",
+      industry: "Manufacturing",
+      challenge: "Inefficient production processes and poor quality control causing delays and defects",
+      solution: "Operational excellence program with digital transformation and quality management system",
+      results: [
+        "40% improvement in productivity",
+        "60% reduction in defects",
+        "30% cost reduction",
+        "Enhanced product quality"
+      ],
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800&h=600"
+    },
+    {
+      title: "Retail Omnichannel Transformation",
       industry: "Consumer & Retail",
-      challenge: "Inefficient supply chain causing stockouts and excess inventory",
-      solution: "Supply chain optimization with demand forecasting and inventory management",
-      results: "35% reduction in stockouts, 20% inventory cost reduction, 15% improvement in customer satisfaction",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800&h=400"
+      challenge: "Declining customer satisfaction and poor omnichannel experience across digital and physical channels",
+      solution: "Omnichannel transformation with customer experience redesign and technology integration",
+      results: [
+        "35% improvement in customer satisfaction",
+        "40% increase in online sales",
+        "Enhanced brand loyalty",
+        "Improved operational efficiency"
+      ],
+      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800&h=600"
     },
     {
-      title: "Technology Company Strategy Transformation",
+      title: "Technology Company Scaling",
       industry: "Technology",
-      challenge: "Needed to pivot from hardware to software-as-a-service model",
-      solution: "Developed comprehensive transformation strategy with phased rollout",
-      results: "40% revenue growth, 60% increase in recurring revenue, successful market repositioning",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&q=80&w=800&h=400"
+      challenge: "Need to scale operations while maintaining innovation culture and product quality",
+      solution: "Operational scaling strategy with culture preservation and process optimization",
+      results: [
+        "200% growth in revenue",
+        "Maintained innovation culture",
+        "40% improvement in operational efficiency",
+        "Enhanced product development"
+      ],
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&q=80&w=800&h=600"
     },
     {
-      title: "Insurance Company Regulatory Compliance",
-      industry: "Financial Services",
-      challenge: "Facing regulatory changes and operational inefficiencies",
-      solution: "Comprehensive compliance framework with operational optimization",
-      results: "100% regulatory compliance, 25% cost reduction, 50% improvement in claims processing time",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800&h=400"
+      title: "Supply Chain Optimization",
+      industry: "Manufacturing",
+      challenge: "Complex supply chain causing delays and quality issues across multiple suppliers",
+      solution: "Supply chain optimization with digital tracking and vendor management system",
+      results: [
+        "50% reduction in lead times",
+        "35% improvement in quality",
+        "Enhanced supplier relationships",
+        "Reduced inventory costs"
+      ],
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800&h=600"
     }
+  ];
+
+  const industries = [
+    { name: "All Industries", count: 24 },
+    { name: "Financial Services", count: 8 },
+    { name: "Healthcare", count: 6 },
+    { name: "Manufacturing", count: 5 },
+    { name: "Consumer & Retail", count: 3 },
+    { name: "Technology", count: 2 }
   ];
 
   return (
@@ -59,21 +98,58 @@ const CaseStudies = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
+      <section className="bg-gradient-to-br from-glynac-midnight-blue to-glynac-steel-blue text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <div className="bg-amber-500 p-4 rounded-lg">
-                <FileText size={48} className="text-slate-900" />
+              <div className="bg-glynac-blue p-4 rounded-lg">
+                <Award size={48} className="text-white" />
               </div>
             </div>
-            <h1 className="text-5xl font-bold mb-6">
-              Case <span className="text-amber-400">Studies</span>
+            <h1 className="text-5xl font-futura font-bold mb-6">
+              Case <span className="text-glynac-blue">Studies</span>
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              Real-world examples of how we've helped organizations overcome challenges 
-              and achieve transformative results across industries.
+            <p className="text-xl text-glynac-light-gray leading-relaxed mb-8 font-arial">
+              Real-world examples of how our consulting expertise has helped organizations 
+              achieve transformative results and sustainable growth.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+                INQUIRE NOW
+              </button>
+              <button className="border-2 border-glynac-blue text-glynac-blue hover:bg-glynac-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all font-arial">
+                Download Case Studies
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Filter */}
+      <section className="py-20 bg-glynac-light-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">Filter by Industry</h2>
+            <p className="text-xl text-glynac-steel-blue max-w-3xl mx-auto font-arial">
+              Explore case studies across different industries and see how we've helped organizations 
+              achieve similar results in your sector.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {industries.map((industry, index) => (
+              <button
+                key={index}
+                className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-all border border-glynac-light-gray"
+              >
+                <div className="text-lg font-futura font-semibold text-glynac-midnight-blue mb-2">
+                  {industry.name}
+                </div>
+                <div className="text-sm text-glynac-steel-blue font-arial">
+                  {industry.count} cases
+                </div>
+              </button>
+            ))}
           </div>
         </div>
       </section>
@@ -82,68 +158,87 @@ const CaseStudies = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Success Stories</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore detailed case studies showcasing our proven approach to solving 
-              complex business challenges and driving sustainable transformation.
+            <h2 className="text-4xl font-futura font-bold text-glynac-midnight-blue mb-4">Success Stories</h2>
+            <p className="text-xl text-glynac-steel-blue max-w-3xl mx-auto font-arial">
+              Discover how our proven methodologies and expert consulting have delivered 
+              measurable results for organizations across industries.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
             {caseStudies.map((study, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all">
-                <img 
-                  src={study.image} 
-                  alt={study.title} 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">
+              <div key={index} className="bg-white border border-glynac-light-gray rounded-xl overflow-hidden hover:shadow-lg transition-all">
+                <div className="relative">
+                  <img 
+                    src={study.image} 
+                    alt={study.title} 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-glynac-blue text-white px-3 py-1 rounded-full text-sm font-arial">
                       {study.industry}
                     </span>
-                    <Award className="h-5 w-5 text-amber-500" />
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-4">{study.title}</h3>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-futura font-semibold text-glynac-midnight-blue mb-4">
+                    {study.title}
+                  </h3>
+                  
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold text-slate-900 mb-2">Challenge</h4>
-                      <p className="text-gray-600 text-sm">{study.challenge}</p>
+                      <h4 className="font-futura font-semibold text-glynac-midnight-blue mb-2">Challenge</h4>
+                      <p className="text-glynac-steel-blue text-sm font-arial">{study.challenge}</p>
                     </div>
+                    
                     <div>
-                      <h4 className="font-semibold text-slate-900 mb-2">Solution</h4>
-                      <p className="text-gray-600 text-sm">{study.solution}</p>
+                      <h4 className="font-futura font-semibold text-glynac-midnight-blue mb-2">Solution</h4>
+                      <p className="text-glynac-steel-blue text-sm font-arial">{study.solution}</p>
                     </div>
+                    
                     <div>
-                      <h4 className="font-semibold text-slate-900 mb-2">Results</h4>
-                      <p className="text-gray-600 text-sm">{study.results}</p>
+                      <h4 className="font-futura font-semibold text-glynac-midnight-blue mb-2">Results</h4>
+                      <ul className="space-y-1">
+                        {study.results.map((result, idx) => (
+                          <li key={idx} className="flex items-start text-glynac-steel-blue text-sm font-arial">
+                            <CheckCircle className="h-3 w-3 text-glynac-blue mr-2 mt-0.5 flex-shrink-0" />
+                            {result}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                  <button className="mt-4 text-amber-600 hover:text-amber-700 font-semibold flex items-center">
+                  
+                  <button className="mt-6 w-full bg-glynac-blue hover:bg-glynac-steel-blue text-white px-4 py-2 rounded-lg font-semibold transition-colors font-arial">
                     Read Full Case Study
-                    <ArrowRight className="h-4 w-4 ml-2" />
                   </button>
                 </div>
               </div>
             ))}
           </div>
+
+          <div className="text-center mt-12">
+            <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+              View All Case Studies
+            </button>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-glynac-midnight-blue to-glynac-steel-blue text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Create Your Success Story?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Let's discuss how our proven approach can help you overcome challenges 
-            and achieve transformative results like the organizations featured above.
+          <h2 className="text-4xl font-futura font-bold mb-6">Ready to Achieve Similar Results?</h2>
+          <p className="text-xl text-glynac-light-gray mb-8 max-w-3xl mx-auto font-arial">
+            Let's discuss how our proven methodologies and expert consulting can help your organization 
+            achieve transformative results and sustainable growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold transition-colors">
-              Schedule Free Consultation
+            <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+              INQUIRE NOW
             </button>
-            <button className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 px-8 py-4 rounded-lg font-semibold transition-all">
-              Download Case Study Collection
+            <button className="border-2 border-glynac-blue text-glynac-blue hover:bg-glynac-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all font-arial">
+              Schedule a Consultation
             </button>
           </div>
         </div>
