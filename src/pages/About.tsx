@@ -1,7 +1,7 @@
-
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import { Users, Award, Globe, Lightbulb } from "lucide-react";
+import { Users, Award, Globe, Lightbulb, ChevronRight } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
 
 const About = () => {
   const milestones = [
@@ -45,6 +45,41 @@ const About = () => {
       role: "Chief Culture Officer",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=300&h=300",
       bio: "Global DEI expert with Fortune 500 transformation experience"
+    }
+  ];
+
+  const faqs = [
+    {
+      question: "What makes Glynac different from other consulting firms?",
+      answer: "Glynac combines three decades of human expertise in organizational culture with cutting-edge AI technology. Unlike traditional consulting firms that rely solely on surveys and interviews, we use advanced AI analytics to process millions of data points from your organization's communication channels, providing deeper, more accurate insights into cultural dynamics. Our platform offers real-time monitoring and predictive analytics that help you make data-driven decisions about cultural transformation."
+    },
+    {
+      question: "How does your AI platform protect employee privacy?",
+      answer: "Privacy and security are our top priorities. Our platform employs enterprise-grade encryption, maintains strict compliance with GDPR, CCPA, and other global privacy regulations, and uses advanced anonymization techniques. We never share individual employee data and provide only aggregated insights that protect personal information while still delivering valuable organizational insights. All data processing follows strict ethical guidelines and is regularly audited for compliance."
+    },
+    {
+      question: "What types of organizations do you work with?",
+      answer: "We work with organizations of all sizes, from Fortune 500 companies to growing startups, across industries including technology, healthcare, financial services, manufacturing, and retail. Our platform is particularly valuable for global organizations with diverse workforces, companies undergoing digital transformation, and organizations focused on improving DEI outcomes. We've helped companies in over 90 countries achieve measurable cultural improvements."
+    },
+    {
+      question: "How long does it take to see results from your platform?",
+      answer: "Most organizations begin seeing initial insights within 2-4 weeks of platform deployment. Our AI algorithms quickly learn your organization's unique context and start identifying patterns and trends. For cultural transformation initiatives, we typically see measurable improvements in key metrics within 3-6 months. The platform provides real-time dashboards so you can monitor progress continuously and adjust strategies as needed."
+    },
+    {
+      question: "What kind of support do you provide during implementation?",
+      answer: "We provide comprehensive support throughout your journey with us. This includes dedicated implementation specialists who work closely with your team, customized training programs for different user roles, ongoing technical support, and regular check-ins to ensure you're getting maximum value from the platform. We also offer strategic consulting services to help you interpret insights and develop action plans based on the data."
+    },
+    {
+      question: "Can your platform integrate with our existing HR systems?",
+      answer: "Yes, our platform is designed to integrate seamlessly with most major HR systems, communication platforms, and survey tools. We support integrations with systems like Workday, BambooHR, Slack, Microsoft Teams, and many others. Our API-first architecture makes it easy to connect existing data sources, and our team works closely with your IT department to ensure smooth integration and data flow."
+    },
+    {
+      question: "What metrics do you track to measure cultural health?",
+      answer: "We track a comprehensive set of cultural health metrics including inclusion scores, collaboration patterns, communication effectiveness, sentiment trends, and engagement levels. Our platform also measures specific DEI indicators, leadership effectiveness, and organizational resilience. We work with you to customize these metrics based on your organization's specific goals and challenges, ensuring the insights are relevant and actionable."
+    },
+    {
+      question: "How do you ensure the accuracy of your AI insights?",
+      answer: "Our AI models are trained on extensive organizational data and continuously refined based on real-world results. We use multiple validation methods including cross-referencing with traditional survey data, expert review of insights, and ongoing feedback from client organizations. Our platform also provides confidence scores for each insight, allowing you to understand the reliability of different recommendations. We regularly publish our methodology and accuracy metrics for transparency."
     }
   ];
 
@@ -178,6 +213,38 @@ const About = () => {
                 <p className="text-gray-300">{value.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-gray-600">Everything you need to know about Glynac and our culture intelligence platform</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`faq-${index}`} className="bg-white border border-gray-200 rounded-sm">
+                  <AccordionTrigger className="px-6 py-4 hover:no-underline text-left">
+                    <h3 className="text-lg font-semibold text-slate-900 pr-8">{faq.question}</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4">
+                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-4">Still have questions? We're here to help.</p>
+            <button className="bg-[#0B1F51] hover:bg-[#0B1F51]/90 text-white px-8 py-3 rounded-sm font-medium transition-colors">
+              Contact Our Team
+            </button>
           </div>
         </div>
       </section>

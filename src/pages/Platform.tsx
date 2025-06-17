@@ -1,7 +1,7 @@
-
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import { Brain, BarChart3, Network, Shield, Zap, Target } from "lucide-react";
+import { Brain, BarChart3, Network, Shield, Zap, Target, ChevronRight } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
 
 const Platform = () => {
   const features = [
@@ -9,25 +9,77 @@ const Platform = () => {
       icon: Brain,
       title: "Advanced AI Analytics",
       description: "Natural language processing and machine learning algorithms analyze communication patterns, sentiment, and cultural dynamics across your organization.",
-      capabilities: ["Sentiment analysis", "Language pattern recognition", "Bias detection", "Predictive modeling"]
+      capabilities: ["Sentiment analysis", "Language pattern recognition", "Bias detection", "Predictive modeling"],
+      detailedDescription: "Our AI analytics engine processes millions of data points to uncover hidden patterns in organizational communication and behavior. Using state-of-the-art natural language processing, we can identify cultural trends, detect potential issues, and provide predictive insights that help leaders make informed decisions.",
+      keyFeatures: [
+        "Real-time sentiment analysis across all communication channels",
+        "Advanced bias detection algorithms with 95% accuracy",
+        "Predictive modeling for cultural trend forecasting",
+        "Multi-language support for global organizations"
+      ],
+      useCases: [
+        "Identify communication bottlenecks and collaboration issues",
+        "Detect early warning signs of cultural problems",
+        "Measure the impact of DEI initiatives",
+        "Optimize team dynamics and leadership effectiveness"
+      ]
     },
     {
       icon: Network,
       title: "Organizational Network Mapping",
       description: "Visualize formal and informal networks to understand how information flows and relationships form within your organization.",
-      capabilities: ["Social network analysis", "Influence mapping", "Collaboration patterns", "Communication bottlenecks"]
+      capabilities: ["Social network analysis", "Influence mapping", "Collaboration patterns", "Communication bottlenecks"],
+      detailedDescription: "Our network mapping technology creates detailed visualizations of how people interact, communicate, and collaborate within your organization. This reveals both formal reporting structures and informal networks that drive actual work and decision-making.",
+      keyFeatures: [
+        "Interactive network visualizations with drill-down capabilities",
+        "Influence and centrality analysis for key stakeholders",
+        "Cross-departmental collaboration pattern identification",
+        "Communication flow optimization recommendations"
+      ],
+      useCases: [
+        "Identify key influencers and change agents",
+        "Optimize organizational structure and reporting relationships",
+        "Improve cross-functional collaboration",
+        "Reduce communication silos and bottlenecks"
+      ]
     },
     {
       icon: BarChart3,
       title: "Real-time Dashboards",
       description: "Interactive dashboards provide instant insights into cultural health metrics, engagement levels, and transformation progress.",
-      capabilities: ["Live data visualization", "Custom KPI tracking", "Trend analysis", "Automated reporting"]
+      capabilities: ["Live data visualization", "Custom KPI tracking", "Trend analysis", "Automated reporting"],
+      detailedDescription: "Our real-time dashboards provide executives and HR leaders with instant visibility into cultural health, engagement metrics, and transformation progress. Customizable KPIs and automated reporting ensure you always have the insights you need to drive positive change.",
+      keyFeatures: [
+        "Customizable dashboards tailored to your organization's needs",
+        "Real-time data updates with configurable refresh rates",
+        "Automated alert system for critical cultural indicators",
+        "Export capabilities for stakeholder reporting"
+      ],
+      useCases: [
+        "Monitor cultural transformation progress in real-time",
+        "Track DEI initiative effectiveness and impact",
+        "Identify areas requiring immediate attention",
+        "Generate executive reports for board presentations"
+      ]
     },
     {
       icon: Shield,
       title: "Privacy & Security",
       description: "Enterprise-grade security ensures all data is protected while maintaining compliance with global privacy regulations.",
-      capabilities: ["End-to-end encryption", "GDPR compliance", "Role-based access", "Data anonymization"]
+      capabilities: ["End-to-end encryption", "GDPR compliance", "Role-based access", "Data anonymization"],
+      detailedDescription: "We understand that cultural data is sensitive and personal. Our platform employs enterprise-grade security measures and maintains strict compliance with global privacy regulations to ensure your data is always protected.",
+      keyFeatures: [
+        "SOC 2 Type II certified security infrastructure",
+        "End-to-end encryption for all data in transit and at rest",
+        "GDPR, CCPA, and other global privacy regulation compliance",
+        "Advanced role-based access controls and audit trails"
+      ],
+      useCases: [
+        "Ensure compliance with data protection regulations",
+        "Maintain employee privacy while gaining cultural insights",
+        "Secure handling of sensitive organizational data",
+        "Audit trail for regulatory and compliance reporting"
+      ]
     }
   ];
 
@@ -69,7 +121,7 @@ const Platform = () => {
         </div>
       </section>
 
-      {/* Platform Features */}
+      {/* Platform Features with Accordion */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -79,29 +131,63 @@ const Platform = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <Accordion type="single" collapsible className="space-y-6">
             {features.map((feature, index) => (
-              <div key={index} className="bg-slate-50 rounded-2xl p-8 hover:shadow-lg transition-all">
-                <div className="flex items-start space-x-6">
-                  <div className="bg-amber-100 p-4 rounded-lg">
-                    <feature.icon className="text-amber-600" size={32} />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-slate-900 mb-4">{feature.title}</h3>
-                    <p className="text-gray-600 mb-6">{feature.description}</p>
-                    <div className="grid grid-cols-2 gap-3">
-                      {feature.capabilities.map((capability, capIndex) => (
-                        <div key={capIndex} className="flex items-center text-sm text-gray-700">
-                          <Zap className="text-amber-500 mr-2" size={16} />
-                          {capability}
-                        </div>
-                      ))}
+              <AccordionItem key={feature.title} value={`feature-${index}`} className="bg-slate-50 rounded-2xl border-0">
+                <AccordionTrigger className="px-8 py-6 hover:no-underline">
+                  <div className="flex items-start w-full">
+                    <div className="bg-amber-100 p-4 rounded-lg flex-shrink-0">
+                      <feature.icon className="text-amber-600" size={32} />
+                    </div>
+                    <div className="ml-6 text-left flex-1">
+                      <h3 className="text-2xl font-semibold text-slate-900 mb-2">{feature.title}</h3>
+                      <p className="text-gray-600">{feature.description}</p>
                     </div>
                   </div>
-                </div>
-              </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-8 pb-8">
+                  <div className="grid lg:grid-cols-2 gap-8">
+                    <div>
+                      <h4 className="font-semibold text-slate-900 mb-3">Overview</h4>
+                      <p className="text-gray-600 mb-6">{feature.detailedDescription}</p>
+                      
+                      <h4 className="font-semibold text-slate-900 mb-3">Key Features</h4>
+                      <ul className="space-y-2 mb-6">
+                        {feature.keyFeatures.map((keyFeature, idx) => (
+                          <li key={idx} className="flex items-start text-gray-600">
+                            <Zap className="h-4 w-4 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+                            {keyFeature}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="font-semibold text-slate-900 mb-3">Use Cases</h4>
+                      <ul className="space-y-2 mb-6">
+                        {feature.useCases.map((useCase, idx) => (
+                          <li key={idx} className="flex items-start text-gray-600">
+                            <Target className="h-4 w-4 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+                            {useCase}
+                          </li>
+                        ))}
+                      </ul>
+                      
+                      <h4 className="font-semibold text-slate-900 mb-3">Capabilities</h4>
+                      <div className="grid grid-cols-2 gap-3">
+                        {feature.capabilities.map((capability, capIndex) => (
+                          <div key={capIndex} className="flex items-center text-sm text-gray-700">
+                            <ChevronRight className="text-amber-500 mr-2" size={16} />
+                            {capability}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
             ))}
-          </div>
+          </Accordion>
         </div>
       </section>
 
