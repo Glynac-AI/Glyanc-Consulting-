@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, ChevronRight, Target, Building2, Users, Briefcase, Globe, Shield, Lightbulb, BarChart3, FileText, Calendar, Users2, Handshake, GraduationCap, Mail } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Globe, Shield, Zap, Users, FileText, Calendar, Building2, Briefcase, Target, BarChart3, Settings, Database, Lock, Mail, Code, Cpu, Network, Wallet, BarChart, TrendingUp, BookOpen, Video, Mic, Rss } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,145 +9,138 @@ const Navigation = () => {
   const location = useLocation();
 
   const navigation = {
-    "What We Do": {
+    "Platform": {
       items: [
         { 
-          name: "Strategy & Transformation", 
+          name: "Glynac Studio", 
+          href: "/platform/studio",
+          icon: Globe,
+          description: "Access our consulting platform and tools"
+        },
+        { 
+          name: "Glynac Connect", 
+          href: "/platform/connect",
+          icon: Users,
+          description: "Connect with our team and clients"
+        },
+        { 
+          name: "Glynac Research", 
+          href: "/platform/research",
+          icon: FileText,
+          description: "Latest insights and industry research"
+        }
+      ],
+      description: "Access our consulting platform tools and resources"
+    },
+    "Services": {
+      items: [
+        { 
+          name: "Strategy Consulting", 
           href: "/services/strategy",
           icon: Target,
-          description: "Define vision, develop strategies, and drive successful transformations"
+          description: "Strategic business transformation guidance"
         },
         { 
-          name: "Operations Excellence", 
-          href: "/services/operations",
-          icon: Building2,
-          description: "Optimize operations and drive sustainable performance improvements"
+          name: "Process Optimization", 
+          href: "/services/optimization",
+          icon: BarChart3,
+          description: "Streamline operations with AI-powered insights"
         },
         { 
-          name: "Digital & Innovation", 
-          href: "/services/digital",
-          icon: Lightbulb,
-          description: "Accelerate digital transformation and foster innovation"
+          name: "Digital Transformation", 
+          href: "/services/transformation",
+          icon: Settings,
+          description: "Modernize your business with intelligent solutions"
+        },
+        { 
+          name: "Change Management", 
+          href: "/services/change",
+          icon: Code,
+          description: "Guide your organization through transformation"
+        }
+      ],
+      description: "Comprehensive consulting services for businesses"
+    },
+    "Solutions": {
+      items: [
+        { 
+          name: "Data Analytics", 
+          href: "/solutions/analytics",
+          icon: Wallet,
+          description: "Transform data into actionable business insights"
+        },
+        { 
+          name: "Automation", 
+          href: "/solutions/automation",
+          icon: Shield,
+          description: "Automate complex business processes"
         },
         { 
           name: "Customer Experience", 
-          href: "/services/customer",
-          icon: Users,
-          description: "Transform customer interactions and build lasting relationships"
+          href: "/solutions/cx",
+          icon: Network,
+          description: "Enhance customer interactions and satisfaction"
         },
         { 
-          name: "Sales & Revenue", 
-          href: "/services/sales",
-          icon: Briefcase,
-          description: "Accelerate revenue growth and market expansion"
+          name: "Operational Excellence", 
+          href: "/solutions/operations",
+          icon: Users,
+          description: "Optimize business operations and efficiency"
         }
       ],
-      description: "Comprehensive consulting services to solve your most complex business challenges"
+      description: "AI-powered solutions for business challenges"
     },
-    "Industries": {
+    "Resources": {
       items: [
         { 
-          name: "Financial Services", 
-          href: "/industries/financial",
-          icon: Shield,
-          description: "Banking, Insurance, Wealth Management, FinTech"
-        },
-        { 
-          name: "Healthcare & Life Sciences", 
-          href: "/industries/healthcare",
-          icon: Users2,
-          description: "Pharmaceuticals, Medical Devices, Healthcare Providers"
-        },
-        { 
-          name: "Technology & Media", 
-          href: "/industries/technology",
-          icon: Lightbulb,
-          description: "Software, Hardware, Digital Media, Telecommunications"
-        },
-        { 
-          name: "Consumer & Retail", 
-          href: "/industries/consumer",
-          icon: Users,
-          description: "Retail, Consumer Goods, E-commerce, Hospitality"
-        },
-        { 
-          name: "Manufacturing & Industrial", 
-          href: "/industries/manufacturing",
-          icon: Building2,
-          description: "Industrial Manufacturing, Automotive, Aerospace"
-        }
-      ],
-      description: "Deep industry expertise across all major sectors"
-    },
-    "Insights": {
-      items: [
-        { 
-          name: "Thought Leadership", 
-          href: "/insights/thought-leadership",
-          icon: Lightbulb,
-          description: "Expert perspectives on emerging trends and challenges"
+          name: "Industry Insights", 
+          href: "/resources/insights",
+          icon: BookOpen,
+          description: "Latest business insights and trends"
         },
         { 
           name: "Case Studies", 
-          href: "/case-studies",
-          icon: FileText,
-          description: "Real-world examples of successful transformations"
-        },
-        { 
-          name: "Research & Reports", 
-          href: "/research",
-          icon: BarChart3,
-          description: "Data-driven insights and industry analysis"
-        },
-        { 
-          name: "Events & Webinars", 
-          href: "/events",
+          href: "/resources/cases",
           icon: Calendar,
-          description: "Join our thought leadership events and discussions"
+          description: "Success stories and client transformations"
+        },
+        { 
+          name: "Thought Leadership", 
+          href: "/resources/thought-leadership",
+          icon: Mail,
+          description: "Expert perspectives on business transformation"
+        },
+        { 
+          name: "Webinars", 
+          href: "/resources/webinars",
+          icon: Mic,
+          description: "Educational sessions and expert discussions"
         }
       ],
-      description: "Stay ahead with our latest research, insights, and thought leadership"
+      description: "Stay ahead with our latest insights and expertise"
     },
-    "About": {
+    "Company": {
       items: [
         { 
-          name: "Our Company", 
-          href: "/about/company",
+          name: "About", 
+          href: "/company/about",
           icon: Building2,
-          description: "Learn about our company, values, and global presence"
-        },
-        { 
-          name: "Our Approach", 
-          href: "/about/approach",
-          icon: Target,
-          description: "Learn about our methodology and proven frameworks"
-        },
-        { 
-          name: "Our People", 
-          href: "/about/people",
-          icon: Users2,
-          description: "Meet our expert consultants and leadership team"
-        },
-        { 
-          name: "Partners", 
-          href: "/about/partners",
-          icon: Handshake,
-          description: "Strategic partnerships that enhance our capabilities"
+          description: "Learn about our mission and team"
         },
         { 
           name: "Careers", 
-          href: "/careers",
-          icon: GraduationCap,
-          description: "Join our team of culture transformation experts"
+          href: "/company/careers",
+          icon: Briefcase,
+          description: "Join our team of consulting experts"
         },
         { 
           name: "Contact", 
-          href: "/contact",
-          icon: Mail,
-          description: "Get in touch to discuss your transformation needs"
+          href: "/company/contact",
+          icon: Users,
+          description: "Get in touch with our team"
         }
       ],
-      description: "Learn more about our company, team, and how to work with us"
+      description: "Learn more about Glynac AI"
     }
   };
 
@@ -175,35 +168,15 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white border-b border-glynac-light-gray sticky top-0 z-50">
+    <nav className="bg-white border-b border-lcw-medium-gray sticky top-0 z-50">
       <div className="max-w-[1920px] mx-auto">
-        {/* Top bar with contact and language */}
-        <div className="bg-glynac-midnight-blue text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-10 items-center text-sm font-arial">
-              <div className="flex space-x-6">
-                <a href="/contact" className="text-white/90 hover:text-white">Contact Us</a>
-                <a href="/locations" className="text-white/90 hover:text-white">Global Locations</a>
-              </div>
-              <div className="flex items-center space-x-4">
-                <select className="bg-transparent text-white/90 border-none focus:ring-0">
-                  <option>English</option>
-                  <option>中文</option>
-                  <option>Español</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Main navigation */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20">
             <div className="flex items-center">
               <Link to="/" className="flex-shrink-0">
-                <div className="text-2xl font-futura font-bold tracking-tight">
-                  <span className="text-glynac-midnight-blue">GLYNAC</span>
-                  <span className="text-glynac-blue">CONSULTING</span>
+                <div className="text-2xl font-display font-bold tracking-tight">
+                  <span className="text-lcw-primary">Glynac AI</span>
                 </div>
               </Link>
             </div>
@@ -218,7 +191,7 @@ const Navigation = () => {
                   onMouseLeave={() => handleDropdownLeave(category)}
                 >
                   <button
-                    className="px-3 py-2 text-sm font-medium text-glynac-midnight-blue hover:text-glynac-blue flex items-center font-arial"
+                    className="px-3 py-2 text-sm font-medium text-lcw-text-dark hover:text-lcw-accent flex items-center font-body transition-colors"
                     onClick={() => handleDropdownClick(category)}
                   >
                     {category}
@@ -227,25 +200,25 @@ const Navigation = () => {
                   
                   {/* Enhanced Dropdown menu */}
                   {isDropdownOpen(category) && (
-                    <div className="absolute left-0 top-full w-80 bg-white border border-glynac-light-gray rounded shadow-lg py-4">
-                      <div className="px-4 pb-3 border-b border-glynac-light-gray mb-3">
-                        <p className="text-sm text-glynac-midnight-blue font-arial">{data.description}</p>
+                    <div className="absolute left-0 top-full w-80 bg-white border border-lcw-medium-gray rounded-lg shadow-lg py-4">
+                      <div className="px-4 pb-3 border-b border-lcw-medium-gray mb-3">
+                        <p className="text-sm text-lcw-text-light font-body">{data.description}</p>
                       </div>
                       <div className="space-y-1">
                         {data.items.map((item) => (
                           <Link
                             key={item.name}
                             to={item.href}
-                            className="flex items-start px-4 py-3 text-sm text-glynac-midnight-blue hover:bg-glynac-light-gray hover:text-glynac-blue transition-colors font-arial"
+                            className="flex items-start px-4 py-3 text-sm text-lcw-text-dark hover:bg-lcw-light-gray hover:text-lcw-accent transition-colors font-body"
                             onClick={() => {
                               setActiveDropdown(null);
                               setClickedDropdown(null);
                             }}
                           >
-                            <item.icon className="h-4 w-4 text-glynac-blue mr-3 mt-0.5 flex-shrink-0" />
+                            <item.icon className="h-4 w-4 text-lcw-accent mr-3 mt-0.5 flex-shrink-0" />
                             <div>
                               <div className="font-medium">{item.name}</div>
-                              <div className="text-xs text-glynac-steel-blue mt-1">{item.description}</div>
+                              <div className="text-xs text-lcw-text-light mt-1">{item.description}</div>
                             </div>
                           </Link>
                         ))}
@@ -254,8 +227,8 @@ const Navigation = () => {
                   )}
                 </div>
               ))}
-              <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-6 py-2.5 rounded font-medium transition-all font-arial">
-                INQUIRE NOW
+              <button className="bg-lcw-accent hover:bg-lcw-light-blue text-white px-6 py-2.5 rounded-lg font-medium transition-all font-body">
+                Get in touch
               </button>
             </div>
 
@@ -263,7 +236,7 @@ const Navigation = () => {
             <div className="lg:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-glynac-midnight-blue hover:text-glynac-blue"
+                className="text-lcw-text-dark hover:text-lcw-accent"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -273,35 +246,35 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden border-t border-glynac-light-gray">
+          <div className="lg:hidden border-t border-lcw-medium-gray">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
               {Object.entries(navigation).map(([category, data]) => (
                 <div key={category} className="space-y-1">
-                  <div className="px-3 py-2 text-base font-medium text-glynac-midnight-blue font-futura">
+                  <div className="px-3 py-2 text-base font-medium text-lcw-text-dark font-display">
                     {category}
                   </div>
-                  <div className="px-3 pb-2 text-sm text-glynac-steel-blue font-arial">
+                  <div className="px-3 pb-2 text-sm text-lcw-text-light font-body">
                     {data.description}
                   </div>
                   {data.items.map((item) => (
                     <Link
                       key={item.name}
                       to={item.href}
-                      className="flex items-start pl-6 pr-3 py-2 text-base font-medium text-glynac-midnight-blue hover:text-glynac-blue hover:bg-glynac-light-gray font-arial"
+                      className="flex items-start pl-6 pr-3 py-2 text-base font-medium text-lcw-text-dark hover:text-lcw-accent hover:bg-lcw-light-gray font-body"
                       onClick={() => setIsOpen(false)}
                     >
-                      <item.icon className="h-4 w-4 text-glynac-blue mr-3 mt-1 flex-shrink-0" />
+                      <item.icon className="h-4 w-4 text-lcw-accent mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <div>{item.name}</div>
-                        <div className="text-sm text-glynac-steel-blue mt-1">{item.description}</div>
+                        <div className="text-sm text-lcw-text-light mt-1">{item.description}</div>
                       </div>
                     </Link>
                   ))}
                 </div>
               ))}
               <div className="px-3 py-4">
-                <button className="w-full bg-glynac-blue hover:bg-glynac-steel-blue text-white px-6 py-2.5 rounded font-medium font-arial">
-                  INQUIRE NOW
+                <button className="w-full bg-lcw-accent hover:bg-lcw-light-blue text-white px-6 py-2.5 rounded-lg font-medium font-body">
+                  Get in touch
                 </button>
               </div>
             </div>

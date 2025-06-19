@@ -1,92 +1,83 @@
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
-import Platform from "./pages/Platform";
 import NotFound from "./pages/NotFound";
 
-// Service pages
-import Strategy from "./pages/services/Strategy";
-import Operations from "./pages/services/Operations";
-import Digital from "./pages/services/Digital";
-import Customer from "./pages/services/Customer";
-import Sales from "./pages/services/Sales";
+// Platform pages
+import Portal from "./pages/platform/Portal";
+import Connect from "./pages/platform/Connect";
+import Research from "./pages/platform/Research";
 
-// Industry pages
-import Financial from "./pages/industries/Financial";
-import Healthcare from "./pages/industries/Healthcare";
-import Technology from "./pages/industries/Technology";
-import Consumer from "./pages/industries/Consumer";
-import Manufacturing from "./pages/industries/Manufacturing";
+// Products pages
+import DeFi from "./pages/products/DeFi";
+import Infrastructure from "./pages/products/Infrastructure";
+import Layer1 from "./pages/products/Layer1";
+import Governance from "./pages/products/Governance";
 
-// Insights pages
-import ThoughtLeadership from "./pages/insights/ThoughtLeadership";
-import CaseStudies from "./pages/CaseStudies";
-import Research from "./pages/Research";
-import Events from "./pages/insights/Events";
+// Services pages
+import Investment from "./pages/services/Investment";
+import ServicesResearch from "./pages/services/Research";
+import Advisory from "./pages/services/Advisory";
+import Technical from "./pages/services/Technical";
 
-// About pages
-import Company from "./pages/about/Company";
-import Approach from "./pages/about/Approach";
-import People from "./pages/about/People";
-import Partners from "./pages/about/Partners";
-import Careers from "./pages/Careers";
+// Resources pages
+import ResourcesResearch from "./pages/resources/Research";
+import Events from "./pages/resources/Events";
+import Newsletter from "./pages/resources/Newsletter";
+import Podcast from "./pages/resources/Podcast";
 
-// Contact page
-import Contact from "./pages/Contact";
-
-const queryClient = new QueryClient();
+// Company pages
+import CompanyAbout from "./pages/company/About";
+import Careers from "./pages/company/Careers";
+import Contact from "./pages/company/Contact";
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/platform" element={<Platform />} />
-          
-          {/* Service Routes */}
-          <Route path="/services/strategy" element={<Strategy />} />
-          <Route path="/services/operations" element={<Operations />} />
-          <Route path="/services/digital" element={<Digital />} />
-          <Route path="/services/customer" element={<Customer />} />
-          <Route path="/services/sales" element={<Sales />} />
-          
-          {/* Industry Routes */}
-          <Route path="/industries/financial" element={<Financial />} />
-          <Route path="/industries/healthcare" element={<Healthcare />} />
-          <Route path="/industries/technology" element={<Technology />} />
-          <Route path="/industries/consumer" element={<Consumer />} />
-          <Route path="/industries/manufacturing" element={<Manufacturing />} />
-          
-          {/* Insights Routes */}
-          <Route path="/insights/thought-leadership" element={<ThoughtLeadership />} />
-          <Route path="/case-studies" element={<CaseStudies />} />
-          <Route path="/research" element={<Research />} />
-          <Route path="/events" element={<Events />} />
-          
-          {/* About Routes */}
-          <Route path="/about/company" element={<Company />} />
-          <Route path="/about/approach" element={<Approach />} />
-          <Route path="/about/people" element={<People />} />
-          <Route path="/about/partners" element={<Partners />} />
-          <Route path="/careers" element={<Careers />} />
-          
-          {/* Contact Route */}
-          <Route path="/contact" element={<Contact />} />
-          
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <TooltipProvider>
+    <Toaster />
+    <Sonner />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        
+        {/* Platform Routes */}
+        <Route path="/platform/portal" element={<Portal />} />
+        <Route path="/platform/connect" element={<Connect />} />
+        <Route path="/platform/research" element={<Research />} />
+        
+        {/* Products Routes */}
+        <Route path="/products/defi" element={<DeFi />} />
+        <Route path="/products/infrastructure" element={<Infrastructure />} />
+        <Route path="/products/layer1" element={<Layer1 />} />
+        <Route path="/products/governance" element={<Governance />} />
+        
+        {/* Services Routes */}
+        <Route path="/services/investment" element={<Investment />} />
+        <Route path="/services/research" element={<ServicesResearch />} />
+        <Route path="/services/advisory" element={<Advisory />} />
+        <Route path="/services/technical" element={<Technical />} />
+        
+        {/* Resources Routes */}
+        <Route path="/resources/research" element={<ResourcesResearch />} />
+        <Route path="/resources/events" element={<Events />} />
+        <Route path="/resources/newsletter" element={<Newsletter />} />
+        <Route path="/resources/podcast" element={<Podcast />} />
+        
+        {/* Company Routes */}
+        <Route path="/company/about" element={<CompanyAbout />} />
+        <Route path="/company/careers" element={<Careers />} />
+        <Route path="/company/contact" element={<Contact />} />
+        
+        {/* Legacy routes for backward compatibility */}
+        <Route path="/about" element={<About />} />
+        
+        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  </TooltipProvider>
 );
 
 export default App;

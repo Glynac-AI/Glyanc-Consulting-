@@ -2,106 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
-/* GLYNAC Design System - Geometric and Sleek */
+/* LCW Inclusion Design System - Professional and Inclusive */
 
 @layer base {
   :root {
-    /* GLYNAC Color Palette */
-    --glynac-blue: 210 100% 56%; /* #1E90FF */
-    --glynac-steel-blue: 210 50% 50%; /* #4682B4 */
-    --glynac-midnight-blue: 240 100% 25%; /* #191970 */
-    --glynac-white: 0 0% 100%; /* #FFFFFF */
-    --glynac-light-gray: 0 0% 88%; /* #E0E0E0 */
+    /* LCW Color Palette */
+    --lcw-primary: 220 40% 25%; /* #1a365d - Deep navy blue */
+    --lcw-secondary: 220 25% 25%; /* #2d3748 - Dark gray-blue */
+    --lcw-accent: 210 100% 50%; /* #3182ce - Bright blue for CTAs */
+    --lcw-light-blue: 210 100% 60%; /* #4299e1 */
+    --lcw-navy: 220 40% 25%; /* #1a365d */
+    --lcw-charcoal: 220 25% 25%; /* #2d3748 */
+    --lcw-steel: 220 15% 35%; /* #4a5568 */
+    --lcw-light-gray: 210 40% 98%; /* #f7fafc */
+    --lcw-medium-gray: 220 14% 91%; /* #e2e8f0 */
+    --lcw-text-dark: 220 25% 15%; /* #1a202c */
+    --lcw-text-light: 220 15% 35%; /* #4a5568 */
+    --lcw-white: 0 0% 100%; /* #FFFFFF */
 
-    --background: var(--glynac-white);
-    --foreground: var(--glynac-midnight-blue);
+    --background: var(--lcw-white);
+    --foreground: var(--lcw-text-dark);
 
-    --card: var(--glynac-white);
-    --card-foreground: var(--glynac-midnight-blue);
+    --card: var(--lcw-white);
+    --card-foreground: var(--lcw-text-dark);
 
-    --popover: var(--glynac-white);
-    --popover-foreground: var(--glynac-midnight-blue);
+    --popover: var(--lcw-white);
+    --popover-foreground: var(--lcw-text-dark);
 
-    --primary: var(--glynac-blue);
-    --primary-foreground: var(--glynac-white);
+    --primary: var(--lcw-primary);
+    --primary-foreground: var(--lcw-white);
 
-    --secondary: var(--glynac-steel-blue);
-    --secondary-foreground: var(--glynac-white);
+    --secondary: var(--lcw-secondary);
+    --secondary-foreground: var(--lcw-white);
 
-    --muted: var(--glynac-light-gray);
-    --muted-foreground: var(--glynac-midnight-blue);
+    --muted: var(--lcw-light-gray);
+    --muted-foreground: var(--lcw-text-light);
 
-    --accent: var(--glynac-steel-blue);
-    --accent-foreground: var(--glynac-white);
+    --accent: var(--lcw-accent);
+    --accent-foreground: var(--lcw-white);
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: var(--glynac-white);
+    --destructive-foreground: var(--lcw-white);
 
-    --border: var(--glynac-light-gray);
-    --input: var(--glynac-light-gray);
-    --ring: var(--glynac-blue);
+    --border: var(--lcw-medium-gray);
+    --input: var(--lcw-medium-gray);
+    --ring: var(--lcw-accent);
 
-    --radius: 0.25rem; /* GLYNAC uses subtle rounded corners */
+    --radius: 0.5rem; /* LCW uses more rounded corners */
 
-    /* GLYNAC-specific colors */
-    --glynac-50: 210 100% 98%;
-    --glynac-100: 210 100% 95%;
-    --glynac-200: 210 100% 90%;
-    --glynac-300: 210 100% 80%;
-    --glynac-400: 210 100% 70%;
-    --glynac-500: 210 100% 56%; /* Primary blue */
-    --glynac-600: 210 50% 50%; /* Steel blue */
-    --glynac-700: 240 100% 35%;
-    --glynac-800: 240 100% 25%; /* Midnight blue */
-    --glynac-900: 240 100% 15%;
-
-    --sidebar-background: var(--glynac-white);
-    --sidebar-foreground: var(--glynac-midnight-blue);
-    --sidebar-primary: var(--glynac-blue);
-    --sidebar-primary-foreground: var(--glynac-white);
-    --sidebar-accent: var(--glynac-steel-blue);
-    --sidebar-accent-foreground: var(--glynac-white);
-    --sidebar-border: var(--glynac-light-gray);
-    --sidebar-ring: var(--glynac-blue);
+    --sidebar-background: var(--lcw-white);
+    --sidebar-foreground: var(--lcw-text-dark);
+    --sidebar-primary: var(--lcw-primary);
+    --sidebar-primary-foreground: var(--lcw-white);
+    --sidebar-accent: var(--lcw-accent);
+    --sidebar-accent-foreground: var(--lcw-white);
+    --sidebar-border: var(--lcw-medium-gray);
+    --sidebar-ring: var(--lcw-accent);
   }
 
   .dark {
-    --background: var(--glynac-midnight-blue);
-    --foreground: var(--glynac-white);
+    --background: var(--lcw-primary);
+    --foreground: var(--lcw-white);
 
-    --card: var(--glynac-midnight-blue);
-    --card-foreground: var(--glynac-white);
+    --card: var(--lcw-primary);
+    --card-foreground: var(--lcw-white);
 
-    --popover: var(--glynac-midnight-blue);
-    --popover-foreground: var(--glynac-white);
+    --popover: var(--lcw-primary);
+    --popover-foreground: var(--lcw-white);
 
-    --primary: var(--glynac-blue);
-    --primary-foreground: var(--glynac-white);
+    --primary: var(--lcw-accent);
+    --primary-foreground: var(--lcw-white);
 
-    --secondary: var(--glynac-steel-blue);
-    --secondary-foreground: var(--glynac-white);
+    --secondary: var(--lcw-secondary);
+    --secondary-foreground: var(--lcw-white);
 
-    --muted: 240 100% 20%;
-    --muted-foreground: var(--glynac-light-gray);
+    --muted: 220 40% 20%;
+    --muted-foreground: var(--lcw-light-gray);
 
-    --accent: var(--glynac-steel-blue);
-    --accent-foreground: var(--glynac-white);
+    --accent: var(--lcw-accent);
+    --accent-foreground: var(--lcw-white);
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: var(--glynac-white);
+    --destructive-foreground: var(--lcw-white);
 
-    --border: 240 100% 20%;
-    --input: 240 100% 20%;
-    --ring: var(--glynac-blue);
+    --border: 220 40% 20%;
+    --input: 220 40% 20%;
+    --ring: var(--lcw-accent);
 
-    --sidebar-background: var(--glynac-midnight-blue);
-    --sidebar-foreground: var(--glynac-white);
-    --sidebar-primary: var(--glynac-blue);
-    --sidebar-primary-foreground: var(--glynac-white);
-    --sidebar-accent: var(--glynac-steel-blue);
-    --sidebar-accent-foreground: var(--glynac-white);
-    --sidebar-border: 240 100% 20%;
-    --sidebar-ring: var(--glynac-blue);
+    --sidebar-background: var(--lcw-primary);
+    --sidebar-foreground: var(--lcw-white);
+    --sidebar-primary: var(--lcw-accent);
+    --sidebar-primary-foreground: var(--lcw-white);
+    --sidebar-accent: var(--lcw-accent);
+    --sidebar-accent-foreground: var(--lcw-white);
+    --sidebar-border: 220 40% 20%;
+    --sidebar-ring: var(--lcw-accent);
   }
 }
 
@@ -116,58 +111,154 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-futura tracking-tight;
+    @apply font-display tracking-tight;
   }
 
   p {
-    @apply leading-relaxed font-arial;
+    @apply leading-relaxed font-body;
   }
 }
 
-/* GLYNAC Typography System */
+/* LCW Typography System */
 @layer utilities {
-  .font-futura {
-    font-family: "Futura", "Futura PT", "Avenir", "Century Gothic", sans-serif;
+  .font-display {
+    font-family: "Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif";
   }
 
-  .font-arial {
-    font-family: "Arial", "Helvetica", sans-serif;
+  .font-body {
+    font-family: "Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif";
   }
 
-  /* GLYNAC-specific text styles */
-  .text-glynac-blue {
-    color: #1E90FF;
+  /* LCW-specific text styles */
+  .text-lcw-primary {
+    color: #1a365d;
   }
 
-  .text-glynac-steel-blue {
-    color: #4682B4;
+  .text-lcw-secondary {
+    color: #2d3748;
   }
 
-  .text-glynac-midnight-blue {
-    color: #191970;
+  .text-lcw-accent {
+    color: #3182ce;
   }
 
-  .bg-glynac-blue {
-    background-color: #1E90FF;
+  .text-lcw-light-blue {
+    color: #4299e1;
   }
 
-  .bg-glynac-steel-blue {
-    background-color: #4682B4;
+  .text-lcw-navy {
+    color: #1a365d;
   }
 
-  .bg-glynac-midnight-blue {
-    background-color: #191970;
+  .text-lcw-charcoal {
+    color: #2d3748;
   }
 
-  .border-glynac-blue {
-    border-color: #1E90FF;
+  .text-lcw-steel {
+    color: #4a5568;
   }
 
-  .border-glynac-steel-blue {
-    border-color: #4682B4;
+  .text-lcw-light-gray {
+    color: #f7fafc;
   }
 
-  .border-glynac-midnight-blue {
-    border-color: #191970;
+  .text-lcw-medium-gray {
+    color: #e2e8f0;
+  }
+
+  .text-lcw-text-dark {
+    color: #1a202c;
+  }
+
+  .text-lcw-text-light {
+    color: #4a5568;
+  }
+
+  .bg-lcw-primary {
+    background-color: #1a365d;
+  }
+
+  .bg-lcw-secondary {
+    background-color: #2d3748;
+  }
+
+  .bg-lcw-accent {
+    background-color: #3182ce;
+  }
+
+  .bg-lcw-light-blue {
+    background-color: #4299e1;
+  }
+
+  .bg-lcw-navy {
+    background-color: #1a365d;
+  }
+
+  .bg-lcw-charcoal {
+    background-color: #2d3748;
+  }
+
+  .bg-lcw-steel {
+    background-color: #4a5568;
+  }
+
+  .bg-lcw-light-gray {
+    background-color: #f7fafc;
+  }
+
+  .bg-lcw-medium-gray {
+    background-color: #e2e8f0;
+  }
+
+  .bg-lcw-text-dark {
+    background-color: #1a202c;
+  }
+
+  .bg-lcw-text-light {
+    background-color: #4a5568;
+  }
+
+  .border-lcw-primary {
+    border-color: #1a365d;
+  }
+
+  .border-lcw-secondary {
+    border-color: #2d3748;
+  }
+
+  .border-lcw-accent {
+    border-color: #3182ce;
+  }
+
+  .border-lcw-light-blue {
+    border-color: #4299e1;
+  }
+
+  .border-lcw-navy {
+    border-color: #1a365d;
+  }
+
+  .border-lcw-charcoal {
+    border-color: #2d3748;
+  }
+
+  .border-lcw-steel {
+    border-color: #4a5568;
+  }
+
+  .border-lcw-light-gray {
+    border-color: #f7fafc;
+  }
+
+  .border-lcw-medium-gray {
+    border-color: #e2e8f0;
+  }
+
+  .border-lcw-text-dark {
+    border-color: #1a202c;
+  }
+
+  .border-lcw-text-light {
+    border-color: #4a5568;
   }
 }
