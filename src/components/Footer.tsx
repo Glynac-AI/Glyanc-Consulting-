@@ -1,83 +1,107 @@
-import { Link } from "react-router-dom";
-import { Facebook, Linkedin, Twitter } from "lucide-react";
+import React from 'react';
+import { Button } from './ui/button';
+import { Mail, Phone, MapPin, Facebook, Linkedin, Twitter } from 'lucide-react';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <footer className="bg-lcw-primary text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid lg:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <div className="text-2xl font-display font-bold">
-              <span className="text-lcw-accent">LCW</span>
-              <span className="text-white">Inclusion</span>
+    <footer className="bg-gradient-to-br from-lcw-text-dark to-lcw-accent text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {/* Company Info */}
+          <div className="lg:col-span-2">
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold mb-4">LCW Inclusion</h3>
+              <p className="text-lcw-light-gray leading-relaxed max-w-md">
+                We leverage over two decades of experience to help your people communicate, 
+                collaborate, and succeed across cultural differences with cost-effective 
+                training and consulting solutions.
+              </p>
             </div>
-            <p className="text-lcw-light-gray font-body">
-              Language & Culture Worldwide, LLC
-            </p>
-            <div className="text-sm text-lcw-light-gray font-body">
-              ©2025 Language & Culture Worldwide, LLC. All rights reserved.
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-display font-semibold mb-4">About</h4>
-            <ul className="space-y-2 text-lcw-light-gray font-body">
-              <li><Link to="/about/approach" className="hover:text-lcw-accent transition-colors">Our Approach</Link></li>
-              <li><Link to="/about/people" className="hover:text-lcw-accent transition-colors">Our Team</Link></li>
-              <li><Link to="/about/impact" className="hover:text-lcw-accent transition-colors">Our Impact</Link></li>
-              <li><Link to="/contact" className="hover:text-lcw-accent transition-colors">Contact us</Link></li>
-              <li><Link to="/careers" className="hover:text-lcw-accent transition-colors">Careers</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-display font-semibold mb-4">Our Solutions</h4>
-            <ul className="space-y-2 text-lcw-light-gray font-body">
-              <li><Link to="/solutions/training" className="hover:text-lcw-accent transition-colors">Training & Learning</Link></li>
-              <li><Link to="/solutions/consulting" className="hover:text-lcw-accent transition-colors">Consulting</Link></li>
-              <li><Link to="/solutions/journeys" className="hover:text-lcw-accent transition-colors">Learning Journeys</Link></li>
-              <li><Link to="/solutions/leadership" className="hover:text-lcw-accent transition-colors">Leader Development</Link></li>
-              <li><Link to="/solutions/assessment" className="hover:text-lcw-accent transition-colors">Assessment</Link></li>
-              <li><Link to="/solutions/translation" className="hover:text-lcw-accent transition-colors">Translation</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-display font-semibold mb-4">Insights</h4>
-            <ul className="space-y-2 text-lcw-light-gray font-body">
-              <li><Link to="/insights/resources" className="hover:text-lcw-accent transition-colors">Downloadable Resources</Link></li>
-              <li><Link to="/insights/blog" className="hover:text-lcw-accent transition-colors">Blog</Link></li>
-              <li><Link to="/insights/podcast" className="hover:text-lcw-accent transition-colors">Podcast</Link></li>
-              <li><Link to="/insights/newsletter" className="hover:text-lcw-accent transition-colors">Newsletter</Link></li>
-              <li><Link to="/events" className="hover:text-lcw-accent transition-colors">Events</Link></li>
-            </ul>
             
-            {/* Newsletter signup */}
-            <div className="mt-6">
-              <h5 className="font-display font-semibold mb-3">Sign up for our Newsletter</h5>
-              <div className="flex">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email"
-                  className="flex-1 px-3 py-2 text-lcw-text-dark rounded-l-lg focus:outline-none focus:ring-2 focus:ring-lcw-accent"
-                />
-                <button className="bg-lcw-accent hover:bg-lcw-light-blue px-4 py-2 rounded-r-lg font-body text-sm transition-colors">
-                  Sign up
-                </button>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <MapPin className="h-5 w-5 text-lcw-secondary" />
+                <span className="text-lcw-light-gray">4753 N Broadway, Floor 2 Chicago, IL</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-lcw-secondary" />
+                <span className="text-lcw-light-gray">+1 (773) 828.6781</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5 text-lcw-secondary" />
+                <span className="text-lcw-light-gray">info@lcwinclusion.com</span>
               </div>
             </div>
+          </div>
 
-            {/* Social media */}
-            <div className="mt-6 flex space-x-4">
-              <a href="#" className="text-lcw-light-gray hover:text-lcw-accent transition-colors">
-                <Facebook size={20} />
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">About</h4>
+            <ul className="space-y-3">
+              <li><a href="/about" className="text-lcw-light-gray hover:text-white transition-colors">Our Approach</a></li>
+              <li><a href="/about/team" className="text-lcw-light-gray hover:text-white transition-colors">Our Team</a></li>
+              <li><a href="/about/impact" className="text-lcw-light-gray hover:text-white transition-colors">Our Impact</a></li>
+              <li><a href="/contact" className="text-lcw-light-gray hover:text-white transition-colors">Contact us</a></li>
+              <li><a href="/careers" className="text-lcw-light-gray hover:text-white transition-colors">Careers</a></li>
+            </ul>
+          </div>
+
+          {/* Solutions */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Our Solutions</h4>
+            <ul className="space-y-3">
+              <li><a href="/solutions/training" className="text-lcw-light-gray hover:text-white transition-colors">Training & Learning</a></li>
+              <li><a href="/solutions/consulting" className="text-lcw-light-gray hover:text-white transition-colors">Consulting</a></li>
+              <li><a href="/solutions/journeys" className="text-lcw-light-gray hover:text-white transition-colors">Learning Journeys</a></li>
+              <li><a href="/solutions/leadership" className="text-lcw-light-gray hover:text-white transition-colors">Leader Development</a></li>
+              <li><a href="/solutions/assessment" className="text-lcw-light-gray hover:text-white transition-colors">Assessment</a></li>
+              <li><a href="/solutions/translation" className="text-lcw-light-gray hover:text-white transition-colors">Translation</a></li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Newsletter Signup */}
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/20">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Sign up for our Newsletter</h3>
+              <p className="text-lcw-light-gray leading-relaxed">
+                Stay updated with the latest insights, research, and best practices in 
+                diversity, equity, and inclusion. Get exclusive content delivered to your inbox.
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <input 
+                type="email" 
+                placeholder="Enter your email address"
+                className="flex-1 px-4 py-3 rounded-lg border border-white/20 bg-white/10 text-white placeholder-lcw-light-gray focus:outline-none focus:ring-2 focus:ring-lcw-secondary"
+              />
+              <Button className="bg-lcw-secondary hover:bg-lcw-orange text-white px-8 py-3 rounded-lg font-semibold">
+                Sign up
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-white/20 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex items-center space-x-6">
+              <a href="#" className="text-lcw-light-gray hover:text-white transition-colors">
+                <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-lcw-light-gray hover:text-lcw-accent transition-colors">
-                <Linkedin size={20} />
+              <a href="#" className="text-lcw-light-gray hover:text-white transition-colors">
+                <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-lcw-light-gray hover:text-lcw-accent transition-colors">
-                <Twitter size={20} />
+              <a href="#" className="text-lcw-light-gray hover:text-white transition-colors">
+                <Twitter className="h-6 w-6" />
               </a>
+            </div>
+            
+            <div className="flex items-center space-x-6 text-sm">
+              <span className="text-lcw-light-gray">©2025 Language & Culture Worldwide, LLC. All rights reserved.</span>
+              <a href="/privacy" className="text-lcw-light-gray hover:text-white transition-colors">Privacy Policy</a>
             </div>
           </div>
         </div>

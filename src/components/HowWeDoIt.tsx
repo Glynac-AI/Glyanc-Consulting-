@@ -1,72 +1,69 @@
-import { ArrowRight, Search, Target, Play, RotateCcw, CheckCircle } from "lucide-react";
+import React from 'react';
+import { Button } from './ui/button';
+import { ArrowRight } from 'lucide-react';
 
-const HowWeDoIt = () => {
-  const processSteps = [
+const HowWeDoIt: React.FC = () => {
+  const steps = [
     {
-      icon: Search,
-      title: "Research",
-      description: "We conduct deep technical research to identify promising protocols and technologies in the crypto ecosystem."
+      title: "Discover",
+      description: "Identify areas of opportunity using diagnostic tools like LCW's Sustainable Culture of Inclusion Model™, Inclusive Collaboration Assessment (Powered by RallyBright), IDI® Assessments, Focus Groups, your own survey results, and more"
     },
     {
-      icon: Target,
-      title: "Analyze",
-      description: "Our team analyzes market dynamics, technical architecture, and team capabilities to assess investment potential."
+      title: "Strategize",
+      description: "Develop recommendations and create an evidence-based action plan by mapping a learning journey or strategy roadmap"
     },
     {
-      icon: Play,
-      title: "Invest",
-      description: "We provide strategic capital and support to the most promising projects and protocols in the space."
+      title: "Deploy",
+      description: "Implement learning solutions that introduce and explore the concepts needed to transform your organization's mindsets and systems"
     },
     {
-      icon: RotateCcw,
-      title: "Build",
-      description: "We actively contribute to protocol development, governance, and ecosystem growth through our technical expertise."
+      title: "Reinforce",
+      description: "Support learners ongoing development by implementing a continuous learning strategy with targeted eLearning and MicroLearning solutions"
     },
     {
-      icon: CheckCircle,
-      title: "Scale",
-      description: "We help projects scale globally by providing strategic guidance, technical support, and ecosystem connections."
+      title: "Embed",
+      description: "Enable continued organizational growth by embedding toolkits, discussion guides, and learning solutions into your team's daily experiences"
     }
   ];
 
   return (
-    <section className="py-20 bg-lcw-light-gray">
+    <section className="bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-display font-bold text-lcw-text-dark mb-6">
-            How we work
+          <h2 className="text-3xl lg:text-4xl font-bold text-lcw-text-dark mb-6">
+            Intentional delivery that results in measurable impact
           </h2>
-          <p className="text-xl text-lcw-text-light font-body max-w-3xl mx-auto leading-relaxed">
-            Our research-driven approach combines deep technical expertise with strategic investment to support the next generation of internet infrastructure.
+          <p className="text-xl text-lcw-text-light max-w-3xl mx-auto leading-relaxed">
+            We help you assess areas of opportunity and develop personally tailored strategies and learning journeys for your teams.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-5 gap-8">
-          {processSteps.map((step, index) => (
+        <div className="grid md:grid-cols-5 gap-8 mb-16">
+          {steps.map((step, index) => (
             <div key={index} className="text-center">
-              <div className="w-16 h-16 bg-lcw-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <step.icon className="w-8 h-8 text-lcw-accent" />
+              <div className="bg-lcw-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 text-xl font-bold">
+                {index + 1}
               </div>
-              <h3 className="text-xl font-display font-bold text-lcw-text-dark mb-4">
+              <h3 className="text-lg font-bold text-lcw-text-dark mb-4">
                 {step.title}
               </h3>
-              <p className="text-lcw-text-light font-body leading-relaxed text-sm">
+              <p className="text-lcw-text-light leading-relaxed text-sm">
                 {step.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="text-lcw-accent hover:text-lcw-light-blue font-medium flex items-center gap-2 font-body text-lg">
-              Our research
-              <ArrowRight size={20} />
-            </button>
-            <button className="text-lcw-accent hover:text-lcw-light-blue font-medium flex items-center gap-2 font-body text-lg">
-              Portfolio companies
-              <ArrowRight size={20} />
-            </button>
+            <Button className="text-lcw-primary hover:text-lcw-accent font-medium flex items-center gap-2 text-lg bg-white hover:bg-lcw-light-gray px-6 py-3 rounded-lg transition-all duration-300 border border-lcw-primary">
+              Our approach »
+              <ArrowRight className="h-5 w-5" />
+            </Button>
+            <Button className="text-lcw-primary hover:text-lcw-accent font-medium flex items-center gap-2 text-lg bg-white hover:bg-lcw-light-gray px-6 py-3 rounded-lg transition-all duration-300 border border-lcw-primary">
+              Learning journeys »
+              <ArrowRight className="h-5 w-5" />
+            </Button>
           </div>
         </div>
       </div>

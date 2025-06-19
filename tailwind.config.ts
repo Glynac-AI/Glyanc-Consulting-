@@ -62,31 +62,27 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// LCW Brand Colors (matching LCW Inclusion website)
+				// LCW Color Palette
 				lcw: {
-					50: '#f0f4f8',
-					100: '#d9e2ec',
-					200: '#bcccdc',
-					300: '#9fb3c8',
-					400: '#829ab1',
-					500: '#627d98',
-					600: '#486581',
-					700: '#334e68',
-					800: '#243b53',
-					900: '#102a43',
-					// Primary colors from LCW website
-					primary: '#1a365d', // Deep navy blue
-					secondary: '#2d3748', // Dark gray-blue
-					accent: '#3182ce', // Bright blue for CTAs
-					'light-blue': '#4299e1',
-					'navy': '#1a365d',
-					'charcoal': '#2d3748',
-					'steel': '#4a5568',
-					'light-gray': '#f7fafc',
-					'medium-gray': '#e2e8f0',
-					'text-dark': '#1a202c',
-					'text-light': '#4a5568',
-					white: '#FFFFFF'
+					primary: "#3cc1c9", // Teal - main brand color
+					secondary: "#ff6b35", // Orange
+					accent: "#2c5aa0", // Blue
+					navy: "#1e3a8a", // Dark blue
+					orange: "#ff6b35", // Orange
+					light: {
+						blue: "#3cc1c9", // Light blue background
+						gray: "#f8fafc",
+					},
+					medium: {
+						gray: "#e2e8f0",
+					},
+					text: {
+						dark: "#1e293b",
+						light: "#64748b",
+					},
+					light: {
+						gray: "#f1f5f9",
+					},
 				}
 			},
 			fontFamily: {

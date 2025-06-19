@@ -1,62 +1,53 @@
-import { ArrowRight, Globe, Shield, Zap, Users } from "lucide-react";
+import React from 'react';
+import { Button } from './ui/button';
 
-const WhatItIs = () => {
+const WhatItIs: React.FC = () => {
   const features = [
     {
-      icon: Globe,
-      title: "Global Infrastructure",
-      description: "We invest in and build the foundational protocols and platforms that power the decentralized web."
+      title: "Cross-cultural approach",
+      description: "Our staff of intercultural experts partners with you to develop the mindsets, systems, and skills needed to excel across cultures, regions, and national borders."
     },
     {
-      icon: Shield,
-      title: "Security First",
-      description: "Our focus on security and reliability ensures the protocols we support are built to last."
+      title: "Global cultural experience",
+      description: "For more than 25 years, we've helped teams navigate cultural nuances in 60+ countries - solving people challenges wherever they arise."
     },
     {
-      icon: Zap,
-      title: "Innovation Driven",
-      description: "We push the boundaries of what's possible in crypto and frontier technologies."
-    },
-    {
-      icon: Users,
-      title: "Community Focused",
-      description: "We believe in the power of open communities and decentralized governance."
+      title: "Transformative solutions",
+      description: "We partner with you for sustained, long-term transformation that builds your existing culture to achieve measurable results and real business impact."
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-display font-bold text-lcw-text-dark mb-6">
-            What we do
+          <h2 className="text-3xl lg:text-4xl font-bold text-lcw-text-dark mb-6">
+            Successfully leverage difference in a multicultural world
           </h2>
-          <p className="text-xl text-lcw-text-light font-body max-w-3xl mx-auto leading-relaxed">
-            We're a research-driven technology investment firm focused on crypto and frontier technologies. Our mission is to support the development of the next generation of the internet.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
             <div key={index} className="text-center">
-              <div className="w-16 h-16 bg-lcw-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <feature.icon className="w-8 h-8 text-lcw-accent" />
-              </div>
-              <h3 className="text-xl font-display font-bold text-lcw-text-dark mb-4">
+              <h3 className="text-xl font-bold text-lcw-text-dark mb-4">
                 {feature.title}
               </h3>
-              <p className="text-lcw-text-light font-body leading-relaxed">
+              <p className="text-lcw-text-light leading-relaxed">
                 {feature.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <button className="text-lcw-accent hover:text-lcw-light-blue font-medium flex items-center gap-2 mx-auto font-body text-lg">
-            Learn more about our approach
-            <ArrowRight size={20} />
-          </button>
+        <div className="bg-lcw-light-gray rounded-2xl p-8 lg:p-12">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl lg:text-3xl font-bold text-lcw-text-dark mb-6 text-center">
+              An intercultural approach to management and leadership development
+            </h3>
+            <p className="text-lg text-lcw-text-light leading-relaxed text-center">
+              Using culture as our foundation, our work stays relevant and authentic as we seek to better understand ourselves, our colleagues, and our clients through individual and collective values and behaviors. Culture affects all facets of our personal and professional life, and our approach helps us ensure every voice is heard and every team member can perform at their best.
+            </p>
+          </div>
         </div>
       </div>
     </section>
