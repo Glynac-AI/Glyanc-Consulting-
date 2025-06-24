@@ -7,24 +7,24 @@ const HowWeDoIt: React.FC = () => {
 
   const steps = [
     {
-      title: "Discover",
-      description: "Identify areas of opportunity using diagnostic tools like LCW's Sustainable Culture of Inclusion Model™, Inclusive Collaboration Assessment (Powered by RallyBright), IDI® Assessments, Focus Groups, your own survey results, and more"
+      title: "AI-Powered Discovery",
+      description: "Our advanced AI algorithms analyze your organization's data, employee feedback, and behavioral patterns to identify culture gaps and opportunities with unprecedented accuracy"
     },
     {
-      title: "Strategize",
-      description: "Develop recommendations and create an evidence-based action plan by mapping a learning journey or strategy roadmap"
+      title: "Intelligent Strategy Design",
+      description: "AI-driven insights inform the creation of personalized, adaptive strategies that evolve with your organization's unique challenges and growth trajectory"
     },
     {
-      title: "Deploy",
-      description: "Implement learning solutions that introduce and explore the concepts needed to transform your organization's mindsets and systems"
+      title: "Smart Implementation",
+      description: "Deploy AI-enhanced learning solutions that adapt to individual learning styles and organizational needs in real-time, maximizing engagement and retention"
     },
     {
-      title: "Reinforce",
-      description: "Support learners ongoing development by implementing a continuous learning strategy with targeted eLearning and MicroLearning solutions"
+      title: "Continuous AI Reinforcement",
+      description: "Leverage machine learning to deliver personalized micro-learning experiences and targeted interventions that reinforce positive cultural behaviors"
     },
     {
-      title: "Embed",
-      description: "Enable continued organizational growth by embedding toolkits, discussion guides, and learning solutions into your team's daily experiences"
+      title: "Adaptive Integration",
+      description: "AI-powered toolkits and intelligent workflows seamlessly integrate into daily operations, ensuring sustainable cultural transformation at scale"
     }
   ];
 
@@ -37,10 +37,10 @@ const HowWeDoIt: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-lcw-primary mb-6">
-            AI-Powered, Expert-Guided: A Smarter Approach to Workplace Culture
+            The AI-Enhanced Journey to Cultural Excellence
           </h2>
           <p className="text-xl text-lcw-primary max-w-3xl mx-auto leading-relaxed">
-            The Glyanc AI Platform unifies data, analyzes trends, and provides actionable strategies to create a culture where everyone does their best work.
+            Experience the future of workplace transformation with our intelligent platform that combines cutting-edge AI with human expertise to create cultures that thrive in the digital age.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ const HowWeDoIt: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center" 
-                alt="Team collaboration and AI-powered insights"
+                alt="AI-powered team collaboration and insights"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-lcw-primary/20 to-transparent"></div>
@@ -95,11 +95,11 @@ const HowWeDoIt: React.FC = () => {
         <div className="text-center mt-16">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="text-lcw-primary hover:text-lcw-accent font-medium flex items-center gap-2 text-lg bg-white hover:bg-lcw-light-gray px-6 py-3 rounded-lg transition-all duration-300 border border-lcw-primary">
-              Learn More »
+              Explore AI Capabilities »
               <ArrowRight className="h-5 w-5" />
             </Button>
             <Button className="text-lcw-primary hover:text-lcw-accent font-medium flex items-center gap-2 text-lg bg-white hover:bg-lcw-light-gray px-6 py-3 rounded-lg transition-all duration-300 border border-lcw-primary">
-              Request Demo »
+              Schedule AI Demo »
               <ArrowRight className="h-5 w-5" />
             </Button>
           </div>

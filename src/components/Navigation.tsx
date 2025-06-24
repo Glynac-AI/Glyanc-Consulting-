@@ -10,60 +10,123 @@ const Navigation: React.FC = () => {
 
   const menuItems = [
     {
-      name: 'About',
-      href: '/about',
+      name: 'Platform',
+      href: '/platform',
       dropdown: [
-        { name: 'Our Approach', href: '/about/approach' },
-        { name: 'Our Team', href: '/about/team' },
-        { name: 'Our Impact', href: '/about/impact' },
-        { name: 'Leadership', href: '/about/leadership' },
-        { name: 'Our Partners', href: '/about/partners' }
+        {
+          section: 'Core Features',
+          items: [
+            { name: 'AI-Powered Insights', href: '/platform/insights' },
+            { name: 'Cultural Analytics', href: '/platform/analytics' },
+            { name: 'Real-Time Monitoring', href: '/platform/monitoring' }
+          ]
+        },
+        {
+          section: 'Solutions',
+          items: [
+            { name: 'Training & Learning', href: '/platform/training' },
+            { name: 'Assessment Tools', href: '/platform/assessment' },
+            { name: 'Performance Tracking', href: '/platform/tracking' }
+          ]
+        },
+        {
+          section: 'Integration',
+          items: [
+            { name: 'API & Webhooks', href: '/platform/api' },
+            { name: 'Data Import/Export', href: '/platform/data' },
+            { name: 'Custom Branding', href: '/platform/branding' }
+          ]
+        }
       ]
     },
     {
-      name: 'Our Solutions',
-      href: '/solutions',
+      name: 'Services',
+      href: '/services',
       dropdown: [
-        { name: 'Training & Learning', href: '/solutions/training' },
-        { name: 'Consulting', href: '/solutions/consulting' },
-        { name: 'Learning Journeys', href: '/solutions/journeys' },
-        { name: 'Leader Development', href: '/solutions/leadership' },
-        { name: 'Assessment', href: '/solutions/assessment' },
-        { name: 'Translation', href: '/solutions/translation' }
+        {
+          section: 'Consulting',
+          items: [
+            { name: 'Strategy Development', href: '/services/strategy' },
+            { name: 'Cultural Assessment', href: '/services/assessment' },
+            { name: 'Implementation Support', href: '/services/implementation' }
+          ]
+        },
+        {
+          section: 'Training',
+          items: [
+            { name: 'Leadership Development', href: '/services/leadership' },
+            { name: 'Team Workshops', href: '/services/workshops' },
+            { name: 'Custom Programs', href: '/services/custom' }
+          ]
+        },
+        {
+          section: 'Support',
+          items: [
+            { name: 'Dedicated Success Manager', href: '/services/success' },
+            { name: 'Technical Support', href: '/services/support' },
+            { name: 'Ongoing Optimization', href: '/services/optimization' }
+          ]
+        }
       ]
     },
     {
-      name: 'Glyanc AI',
-      href: '/ai',
+      name: 'Resources',
+      href: '/resources',
       dropdown: [
-        { name: 'Platform Overview', href: '/ai/overview' },
-        { name: 'AI-Powered Insights', href: '/ai/insights' },
-        { name: 'Data Analytics', href: '/ai/analytics' },
-        { name: 'Automated Assessments', href: '/ai/assessments' },
-        { name: 'Personalized Learning', href: '/ai/learning' },
-        { name: 'Performance Tracking', href: '/ai/tracking' }
+        {
+          section: 'Content',
+          items: [
+            { name: 'Blog & Articles', href: '/resources/blog' },
+            { name: 'Research Reports', href: '/resources/research' },
+            { name: 'Case Studies', href: '/resources/cases' }
+          ]
+        },
+        {
+          section: 'Events',
+          items: [
+            { name: 'Webinars', href: '/resources/webinars' },
+            { name: 'Conferences', href: '/resources/conferences' },
+            { name: 'Workshops', href: '/resources/workshops' }
+          ]
+        },
+        {
+          section: 'Tools',
+          items: [
+            { name: 'Assessment Templates', href: '/resources/templates' },
+            { name: 'ROI Calculator', href: '/resources/calculator' },
+            { name: 'Implementation Guide', href: '/resources/guide' }
+          ]
+        }
       ]
     },
     {
-      name: 'Insights',
-      href: '/insights',
+      name: 'Company',
+      href: '/company',
       dropdown: [
-        { name: 'Blog', href: '/insights/blog' },
-        { name: 'Podcast', href: '/insights/podcast' },
-        { name: 'Newsletter', href: '/insights/newsletter' },
-        { name: 'Events', href: '/insights/events' },
-        { name: 'Research & Guides', href: '/insights/research' },
-        { name: 'Customer Stories', href: '/insights/stories' }
-      ]
-    },
-    {
-      name: 'Careers',
-      href: '/careers',
-      dropdown: [
-        { name: 'Open Positions', href: '/careers/positions' },
-        { name: 'Culture & Values', href: '/careers/culture' },
-        { name: 'Benefits', href: '/careers/benefits' },
-        { name: 'Growth Opportunities', href: '/careers/growth' }
+        {
+          section: 'About',
+          items: [
+            { name: 'Our Mission', href: '/company/mission' },
+            { name: 'Leadership Team', href: '/company/leadership' },
+            { name: 'Our Story', href: '/company/story' }
+          ]
+        },
+        {
+          section: 'Careers',
+          items: [
+            { name: 'Open Positions', href: '/company/careers' },
+            { name: 'Culture & Values', href: '/company/culture' },
+            { name: 'Benefits', href: '/company/benefits' }
+          ]
+        },
+        {
+          section: 'Contact',
+          items: [
+            { name: 'Get in Touch', href: '/company/contact' },
+            { name: 'Request Demo', href: '/company/demo' },
+            { name: 'Support', href: '/company/support' }
+          ]
+        }
       ]
     }
   ];
@@ -134,17 +197,28 @@ const Navigation: React.FC = () => {
 
                 {/* Dropdown Menu */}
                 {activeDropdown === item.name && item.dropdown.length > 0 && (
-                  <div className="absolute top-full left-0 mt-0 w-64 bg-white rounded-lg shadow-lg border border-lcw-medium-gray py-2 z-50">
-                    {item.dropdown.map((dropdownItem) => (
-                      <Link
-                        key={dropdownItem.name}
-                        to={dropdownItem.href}
-                        className="block px-4 py-3 text-sm text-lcw-text-dark hover:bg-lcw-light-gray hover:text-lcw-primary transition-colors duration-200"
-                        onClick={() => setActiveDropdown(null)}
-                      >
-                        {dropdownItem.name}
-                      </Link>
-                    ))}
+                  <div className="absolute top-full left-0 mt-0 w-[36rem] bg-white rounded-lg shadow-xl border border-lcw-medium-gray py-8 z-50">
+                    <div className="grid grid-cols-3 gap-12 px-10">
+                      {item.dropdown.map((section, sectionIndex) => (
+                        <div key={sectionIndex} className="space-y-4 min-w-0">
+                          <h3 className="text-sm font-bold text-lcw-primary uppercase tracking-wide border-b border-lcw-light-gray pb-2 whitespace-nowrap">
+                            {section.section}
+                          </h3>
+                          <div className="space-y-3">
+                            {section.items.map((dropdownItem) => (
+                              <Link
+                                key={dropdownItem.name}
+                                to={dropdownItem.href}
+                                className="block text-sm text-lcw-text-dark hover:text-lcw-primary transition-colors duration-200 py-1"
+                                onClick={() => setActiveDropdown(null)}
+                              >
+                                {dropdownItem.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
@@ -187,19 +261,28 @@ const Navigation: React.FC = () => {
                 </button>
                 
                 {activeDropdown === item.name && item.dropdown.length > 0 && (
-                  <div className="pl-4 space-y-1">
-                    {item.dropdown.map((dropdownItem) => (
-                      <Link
-                        key={dropdownItem.name}
-                        to={dropdownItem.href}
-                        className="block px-3 py-2 text-sm text-lcw-text-light hover:text-lcw-primary hover:bg-lcw-light-gray rounded-md"
-                        onClick={() => {
-                          setActiveDropdown(null);
-                          setIsOpen(false);
-                        }}
-                      >
-                        {dropdownItem.name}
-                      </Link>
+                  <div className="pl-4 space-y-4">
+                    {item.dropdown.map((section, sectionIndex) => (
+                      <div key={sectionIndex} className="space-y-2">
+                        <h3 className="text-sm font-semibold text-lcw-primary uppercase tracking-wide">
+                          {section.section}
+                        </h3>
+                        <div className="pl-4 space-y-1">
+                          {section.items.map((dropdownItem) => (
+                            <Link
+                              key={dropdownItem.name}
+                              to={dropdownItem.href}
+                              className="block px-3 py-2 text-sm text-lcw-text-light hover:text-lcw-primary hover:bg-lcw-light-gray rounded-md"
+                              onClick={() => {
+                                setActiveDropdown(null);
+                                setIsOpen(false);
+                              }}
+                            >
+                              {dropdownItem.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
                     ))}
                   </div>
                 )}

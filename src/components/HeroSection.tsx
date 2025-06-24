@@ -11,13 +11,13 @@ const HeroSection: React.FC = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-5xl font-bold text-lcw-primary leading-tight">
-                Building High Performance Cultures
+                The Future of Workplace Culture is Here
               </h1>
               <p className="text-lg text-lcw-primary font-semibold">
-                AI-Powered. Expert-Guided. Scalable.
+                AI-Powered Insights. Human-Centered Design. Real-Time Transformation.
               </p>
               <p className="text-xl text-lcw-primary leading-relaxed max-w-2xl">
-                The Glyanc AI Platform combines AI-powered insights with expert-driven solutions to help companies build high-performance cultures for everyone.
+                Harness the power of next-generation AI to build inclusive, high-performance cultures that adapt and evolve with your organization's needs in real-time.
               </p>
             </div>
             
@@ -26,24 +26,24 @@ const HeroSection: React.FC = () => {
                 size="lg" 
                 className="bg-lcw-primary hover:bg-lcw-accent text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                See It In Action »
+                Experience the Future »
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
                 className="border-lcw-primary text-lcw-primary hover:bg-lcw-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
               >
-                Learn More »
+                Explore Platform »
               </Button>
             </div>
 
             <div className="pt-8">
-              <p className="text-sm text-lcw-primary mb-6 uppercase tracking-wide">trusted by thousands of companies</p>
+              <p className="text-sm text-lcw-primary mb-6 uppercase tracking-wide">trusted by forward-thinking organizations worldwide</p>
               <Button 
                 variant="link" 
                 className="text-lcw-primary hover:text-lcw-accent font-medium"
               >
-                Read our case studies »
+                See transformation stories »
               </Button>
             </div>
           </div>
@@ -53,14 +53,14 @@ const HeroSection: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop&crop=center" 
-                alt="Diverse team collaborating"
+                alt="Diverse team collaborating with AI-powered insights"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#293876]/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4">
                   <p className="text-lcw-primary font-semibold text-sm">
-                    "Culture eats strategy for breakfast" – Peter Drucker
+                    "The future belongs to organizations that can adapt their culture in real-time" – 2025 Workplace Insights
                   </p>
                 </div>
               </div>

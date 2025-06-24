@@ -4,18 +4,18 @@ import { Button } from './ui/button';
 const WhatItIs: React.FC = () => {
   const features = [
     {
-      title: "Attract and Retain Top Talent",
-      description: "Create an environment where employees from all backgrounds feel valued, included, and motivated to perform at their best.",
+      title: "AI-Powered Talent Intelligence",
+      description: "Leverage predictive analytics and machine learning to attract, retain, and develop top talent from diverse backgrounds with unprecedented precision.",
       logo: "/cross-cultural.png"
     },
     {
-      title: "Drive Engagement and Performance",
-      description: "Foster belonging to unlock performance, productivity, collaboration, and innovation across your organization.",
+      title: "Real-Time Engagement Analytics",
+      description: "Monitor and optimize workplace engagement, collaboration, and innovation through continuous AI-driven insights and adaptive recommendations.",
       logo: "/global-cultural.png"
     },
     {
-      title: "Intentional and Scalable",
-      description: "Build a future-ready culture with data-driven insights, strong leadership, and clear accountability at every level.",
+      title: "Intelligent Culture Scaling",
+      description: "Build future-ready, adaptive cultures using advanced AI algorithms that learn and evolve with your organization's growth and changing needs.",
       logo: "/transformative.png"
     }
   ];
@@ -25,7 +25,7 @@ const WhatItIs: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-lcw-primary mb-6">
-            Healthy Cultures Unlock Performance and Innovation
+            Where AI Meets Human Potential: The Next Evolution of Workplace Culture
           </h2>
         </div>
 
@@ -52,10 +52,10 @@ const WhatItIs: React.FC = () => {
         <div className="bg-[#d974ac] rounded-2xl p-8 lg:p-12">
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 text-center">
-              A Culture for Everyone attracts the best people from all backgrounds
+              Adaptive Intelligence for Inclusive Excellence
             </h3>
             <p className="text-lg text-white leading-relaxed text-center">
-              A Culture for Everyone enables people who are different from one another to come together, collaborate, and perform at their best. Using Glyanc AI as our foundation, our work stays relevant and authentic as we seek to better understand ourselves, our colleagues, and our clients through individual and collective values and behaviors.
+              Our AI-powered platform enables organizations to create truly inclusive environments where diverse perspectives thrive. Through continuous learning algorithms and real-time behavioral analysis, we help teams understand, adapt, and excel together in ways that were previously impossible.
             </p>
           </div>
         </div>

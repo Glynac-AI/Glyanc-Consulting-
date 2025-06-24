@@ -7,13 +7,13 @@ const CallToAction: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-lcw-primary mb-6">
-            Transform Your Workplace Culture – Connect with Our Experts
+            Ready to Transform Your Workplace with AI-Powered Intelligence?
           </h2>
           <p className="text-xl text-lcw-primary max-w-3xl mx-auto leading-relaxed mb-8">
-            Leading organizations rely on Glyanc AI to create stronger teams and better workplaces. See the impact firsthand.
+            Join forward-thinking organizations that are already leveraging AI to create the workplace cultures of tomorrow. See the future of work in action.
           </p>
           <Button className="bg-lcw-primary hover:bg-lcw-accent text-white px-8 py-4 text-lg font-semibold rounded-lg">
-            Talk to Sales »
+            Start Your AI Journey »
           </Button>
         </div>
       </div>
