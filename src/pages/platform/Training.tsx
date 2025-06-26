@@ -10,28 +10,28 @@ const Training = () => {
       title: "AI-Powered eLearning",
       description: "Next-generation adaptive learning platforms that leverage machine learning to create personalized learning experiences. Our AI continuously analyzes learner behavior, adapts content in real-time, and provides intelligent recommendations based on individual progress and cultural context.",
       features: ["Real-time AI adaptation", "Multilingual AI translation", "Global scalability", "Predictive learning analytics"],
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop&crop=center",
+      image: "/elearning-photo.png",
       logo: "/elearning.png"
     },
     {
       title: "Intelligent MicroLearning",
       description: "AI-driven microlearning that delivers just-in-time, contextual learning moments. Our intelligent system predicts when learners need specific knowledge and delivers personalized content through mobile-first, bite-sized experiences that drive measurable behavior change.",
       features: ["Predictive content delivery", "Mobile-first AI", "Contextual learning", "Behavioral analytics"],
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&crop=center",
+      image: "/microlearning-photo.png",
       logo: "/microlearning.png"
     },
     {
       title: "AI-Enhanced Facilitated Training",
       description: "Human-led workshops supercharged with AI insights. Our facilitators leverage real-time AI analytics to personalize group dynamics, identify learning gaps, and create more impactful interactive experiences that bridge cultural and cognitive differences.",
       features: ["Real-time AI insights", "Personalized facilitation", "Hybrid delivery", "Cultural intelligence"],
-      image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&h=600&fit=crop&crop=center",
+      image: "/facilitated-photo.png",
       logo: "/facilitated_training.png"
     },
     {
       title: "Smart Toolkits & AI Guides",
       description: "Intelligent conversation frameworks and AI-powered discussion guides that help leaders facilitate inclusive dialogues. Our AI analyzes team dynamics and provides real-time suggestions for more effective, culturally-aware conversations.",
       features: ["AI conversation coaching", "Real-time guidance", "Cultural intelligence", "Impact analytics"],
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&crop=center",
+      image: "/toolkits-photo.png",
       logo: "/toolkits_discussion.png"
     }
   ];
@@ -133,9 +133,9 @@ const Training = () => {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&crop=center" 
+                  src="/training-title-photo.png" 
                   alt="AI-powered learning and development platform"
-                  className="w-full h-96 object-cover"
+                  className="w-full h-96 object-contain"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2cb674]/20 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
@@ -213,9 +213,9 @@ const Training = () => {
           {trainingCategories.map((category, index) => {
             // Different images for each category
             const categoryImages = [
-              "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop&crop=center", // Workplace Inclusion
-              "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop&crop=center", // Mitigating Bias
-              "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&h=600&fit=crop&crop=center" // Cultural Literacy
+              "/workplace-inclusion-photo.png", // Workplace Inclusion
+              "/mitigating-bias-photo.png", // Mitigating Bias
+              "/cultural-literacy-photo.png" // Cultural Literacy
             ];
             
             const categoryAltTexts = [
@@ -310,7 +310,7 @@ const Training = () => {
             {/* Scalable solutions column */}
             <div className="flex flex-col items-center text-center lg:text-left lg:items-start">
               <img 
-                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?w=800&h=400&fit=crop&crop=center"
+                src="/scalable-solutions-photo.png"
                 alt="AI-powered scalable learning solutions"
                 className="w-full h-48 object-cover rounded-xl mb-6"
               />
@@ -328,7 +328,7 @@ const Training = () => {
             {/* Structured delivery column */}
             <div className="flex flex-col items-center text-center lg:text-left lg:items-start">
               <img 
-                src="https://images.unsplash.com/photo-1503676382389-4809596d5290?w=800&h=400&fit=crop&crop=center"
+                src="/structured-delivery-photo.png"
                 alt="AI-enhanced structured training delivery"
                 className="w-full h-48 object-cover rounded-xl mb-6"
               />

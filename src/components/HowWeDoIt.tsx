@@ -49,9 +49,9 @@ const HowWeDoIt: React.FC = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&crop=center" 
+                src="/5-step-homepage-photo.png" 
                 alt="AI-powered team collaboration and insights"
-                className="w-full h-96 object-cover"
+                className="w-full h-96 object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-lcw-primary/20 to-transparent"></div>
             </div>

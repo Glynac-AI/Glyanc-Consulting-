@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop&crop=center" 
+                src="/homepage-title-photo.png" 
                 alt="Diverse team collaborating with AI-powered insights"
                 className="w-full h-96 object-cover"
               />
