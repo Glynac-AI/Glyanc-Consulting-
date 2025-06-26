@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import Portal from "./pages/platform/Portal";
 import Connect from "./pages/platform/Connect";
 import Research from "./pages/platform/Research";
+import Training from "./pages/platform/Training";
 
 // Products pages
 import DeFi from "./pages/products/DeFi";
@@ -46,6 +47,7 @@ const App = () => (
         <Route path="/platform/portal" element={<Portal />} />
         <Route path="/platform/connect" element={<Connect />} />
         <Route path="/platform/research" element={<Research />} />
+        <Route path="/platform/training" element={<Training />} />
         
         {/* Products Routes */}
         <Route path="/products/defi" element={<DeFi />} />
