@@ -11,6 +11,11 @@ import Portal from "./pages/platform/Portal";
 import Connect from "./pages/platform/Connect";
 import Research from "./pages/platform/Research";
 import Training from "./pages/platform/Training";
+import Insights from "./pages/platform/Insights";
+import Analytics from "./pages/platform/Analytics";
+import Assessment from "./pages/platform/Assessment";
+import Api from "./pages/platform/Api";
+import Data from "./pages/platform/Data";
 
 // Products pages
 import DeFi from "./pages/products/DeFi";
@@ -48,6 +53,11 @@ const App = () => (
         <Route path="/platform/connect" element={<Connect />} />
         <Route path="/platform/research" element={<Research />} />
         <Route path="/platform/training" element={<Training />} />
+        <Route path="/platform/insights" element={<Insights />} />
+        <Route path="/platform/analytics" element={<Analytics />} />
+        <Route path="/platform/assessment" element={<Assessment />} />
+        <Route path="/platform/api" element={<Api />} />
+        <Route path="/platform/data" element={<Data />} />
         
         {/* Products Routes */}
         <Route path="/products/defi" element={<DeFi />} />

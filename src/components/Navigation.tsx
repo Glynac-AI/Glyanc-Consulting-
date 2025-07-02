@@ -17,24 +17,21 @@ const Navigation: React.FC = () => {
           section: 'Core Features',
           items: [
             { name: 'AI-Powered Insights', href: '/platform/insights' },
-            { name: 'Cultural Analytics', href: '/platform/analytics' },
-            { name: 'Real-Time Monitoring', href: '/platform/monitoring' }
+            { name: 'Cultural Analytics', href: '/platform/analytics' }
           ]
         },
         {
           section: 'Solutions',
           items: [
             { name: 'Training & Learning', href: '/platform/training' },
-            { name: 'Assessment Tools', href: '/platform/assessment' },
-            { name: 'Performance Tracking', href: '/platform/tracking' }
+            { name: 'Assessment Tools', href: '/platform/assessment' }
           ]
         },
         {
           section: 'Integration',
           items: [
             { name: 'API & Webhooks', href: '/platform/api' },
-            { name: 'Data Import/Export', href: '/platform/data' },
-            { name: 'Custom Branding', href: '/platform/branding' }
+            { name: 'Data Import/Export', href: '/platform/data' }
           ]
         }
       ]
