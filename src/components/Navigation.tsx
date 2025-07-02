@@ -44,22 +44,19 @@ const Navigation: React.FC = () => {
           section: 'Consulting',
           items: [
             { name: 'Strategy Development', href: '/services/strategy' },
-            { name: 'Cultural Assessment', href: '/services/assessment' },
-            { name: 'Implementation Support', href: '/services/implementation' }
+            { name: 'Cultural Assessment', href: '/services/assessment' }
           ]
         },
         {
           section: 'Training',
           items: [
             { name: 'Leadership Development', href: '/services/leadership' },
-            { name: 'Team Workshops', href: '/services/workshops' },
-            { name: 'Custom Programs', href: '/services/custom' }
+            { name: 'Team Workshops', href: '/services/workshops' }
           ]
         },
         {
           section: 'Support',
           items: [
-            { name: 'Dedicated Success Manager', href: '/services/success' },
             { name: 'Technical Support', href: '/services/support' },
             { name: 'Ongoing Optimization', href: '/services/optimization' }
           ]

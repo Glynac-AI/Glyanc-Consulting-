@@ -11,6 +11,7 @@ import Portal from "./pages/platform/Portal";
 import Connect from "./pages/platform/Connect";
 import Research from "./pages/platform/Research";
 import Training from "./pages/platform/Training";
+import Strategy from "./pages/platform/Strategy";
 import Insights from "./pages/platform/Insights";
 import Analytics from "./pages/platform/Analytics";
 import Assessment from "./pages/platform/Assessment";
@@ -28,6 +29,12 @@ import Investment from "./pages/services/Investment";
 import ServicesResearch from "./pages/services/Research";
 import Advisory from "./pages/services/Advisory";
 import Technical from "./pages/services/Technical";
+import ServicesStrategy from "./pages/services/Strategy";
+import ServicesAssessment from "./pages/services/Assessment";
+import Leadership from "./pages/services/Leadership";
+import Workshops from "./pages/services/Workshops";
+import Support from "./pages/services/Support";
+import Optimization from "./pages/services/Optimization";
 
 // Resources pages
 import ResourcesResearch from "./pages/resources/Research";
@@ -53,6 +60,7 @@ const App = () => (
         <Route path="/platform/connect" element={<Connect />} />
         <Route path="/platform/research" element={<Research />} />
         <Route path="/platform/training" element={<Training />} />
+        <Route path="/platform/strategy" element={<Strategy />} />
         <Route path="/platform/insights" element={<Insights />} />
         <Route path="/platform/analytics" element={<Analytics />} />
         <Route path="/platform/assessment" element={<Assessment />} />
@@ -70,6 +78,12 @@ const App = () => (
         <Route path="/services/research" element={<ServicesResearch />} />
         <Route path="/services/advisory" element={<Advisory />} />
         <Route path="/services/technical" element={<Technical />} />
+        <Route path="/services/strategy" element={<ServicesStrategy />} />
+        <Route path="/services/assessment" element={<ServicesAssessment />} />
+        <Route path="/services/leadership" element={<Leadership />} />
+        <Route path="/services/workshops" element={<Workshops />} />
+        <Route path="/services/support" element={<Support />} />
+        <Route path="/services/optimization" element={<Optimization />} />
         
         {/* Resources Routes */}
         <Route path="/resources/research" element={<ResourcesResearch />} />
