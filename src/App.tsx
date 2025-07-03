@@ -38,6 +38,11 @@ import Optimization from "./pages/services/Optimization";
 
 // Resources pages
 import ResourcesResearch from "./pages/resources/Research";
+import Blog from "./pages/resources/Blog";
+import Webinars from "./pages/resources/Webinars";
+import ResourcesWorkshops from "./pages/resources/Workshops";
+import Templates from "./pages/resources/Templates";
+import Guide from "./pages/resources/Guide";
 import Events from "./pages/resources/Events";
 import Newsletter from "./pages/resources/Newsletter";
 import Podcast from "./pages/resources/Podcast";
@@ -46,6 +51,12 @@ import Podcast from "./pages/resources/Podcast";
 import CompanyAbout from "./pages/company/About";
 import Careers from "./pages/company/Careers";
 import Contact from "./pages/company/Contact";
+import Mission from "./pages/company/Mission";
+import CompanyLeadership from "./pages/company/Leadership";
+import OpenPositions from "./pages/company/OpenPositions";
+import Culture from "./pages/company/Culture";
+import GetInTouch from "./pages/company/GetInTouch";
+import RequestDemo from "./pages/company/RequestDemo";
 
 const App = () => (
   <TooltipProvider>
@@ -87,14 +98,23 @@ const App = () => (
         
         {/* Resources Routes */}
         <Route path="/resources/research" element={<ResourcesResearch />} />
+        <Route path="/resources/blog" element={<Blog />} />
+        <Route path="/resources/webinars" element={<Webinars />} />
+        <Route path="/resources/workshops" element={<ResourcesWorkshops />} />
+        <Route path="/resources/templates" element={<Templates />} />
+        <Route path="/resources/guide" element={<Guide />} />
         <Route path="/resources/events" element={<Events />} />
         <Route path="/resources/newsletter" element={<Newsletter />} />
         <Route path="/resources/podcast" element={<Podcast />} />
         
         {/* Company Routes */}
         <Route path="/company/about" element={<CompanyAbout />} />
-        <Route path="/company/careers" element={<Careers />} />
-        <Route path="/company/contact" element={<Contact />} />
+        <Route path="/company/careers" element={<OpenPositions />} />
+        <Route path="/company/contact" element={<GetInTouch />} />
+        <Route path="/company/mission" element={<Mission />} />
+        <Route path="/company/leadership" element={<CompanyLeadership />} />
+        <Route path="/company/culture" element={<Culture />} />
+        <Route path="/company/demo" element={<RequestDemo />} />
         
         {/* Legacy routes for backward compatibility */}
         <Route path="/about" element={<About />} />

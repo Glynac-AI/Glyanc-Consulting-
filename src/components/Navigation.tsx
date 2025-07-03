@@ -71,15 +71,13 @@ const Navigation: React.FC = () => {
           section: 'Content',
           items: [
             { name: 'Blog & Articles', href: '/resources/blog' },
-            { name: 'Research Reports', href: '/resources/research' },
-            { name: 'Case Studies', href: '/resources/cases' }
+            { name: 'Research Reports', href: '/resources/research' }
           ]
         },
         {
           section: 'Events',
           items: [
             { name: 'Webinars', href: '/resources/webinars' },
-            { name: 'Conferences', href: '/resources/conferences' },
             { name: 'Workshops', href: '/resources/workshops' }
           ]
         },
@@ -87,7 +85,6 @@ const Navigation: React.FC = () => {
           section: 'Tools',
           items: [
             { name: 'Assessment Templates', href: '/resources/templates' },
-            { name: 'ROI Calculator', href: '/resources/calculator' },
             { name: 'Implementation Guide', href: '/resources/guide' }
           ]
         }
@@ -101,24 +98,21 @@ const Navigation: React.FC = () => {
           section: 'About',
           items: [
             { name: 'Our Mission', href: '/company/mission' },
-            { name: 'Leadership Team', href: '/company/leadership' },
-            { name: 'Our Story', href: '/company/story' }
+            { name: 'Leadership Team', href: '/company/leadership' }
           ]
         },
         {
           section: 'Careers',
           items: [
             { name: 'Open Positions', href: '/company/careers' },
-            { name: 'Culture & Values', href: '/company/culture' },
-            { name: 'Benefits', href: '/company/benefits' }
+            { name: 'Culture & Values', href: '/company/culture' }
           ]
         },
         {
           section: 'Contact',
           items: [
             { name: 'Get in Touch', href: '/company/contact' },
-            { name: 'Request Demo', href: '/company/demo' },
-            { name: 'Support', href: '/company/support' }
+            { name: 'Request Demo', href: '/company/demo' }
           ]
         }
       ]
