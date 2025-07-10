@@ -82,6 +82,32 @@ The server will serve the built files from the `dist` directory and handle all r
 
 **Note**: The server is configured to handle the "not found" issue when users directly access URLs like `/platform/insights` or refresh the page.
 
+### Option 3: Static Hosting with Redirect Rules
+For static hosting platforms (Vercel, Netlify, etc.), the project includes configuration files:
+- `public/_redirects` - For Netlify and similar platforms
+- `vercel.json` - For Vercel deployments
+- `netlify.toml` - For Netlify deployments
+
+These files tell the hosting platform to serve `index.html` for all routes, allowing client-side routing to work properly.
+
+### For Render Deployment
+If you're using Render, you have two options:
+
+#### Option A: Web Service (Recommended)
+1. Use the `render.yaml` configuration file
+2. Set the build command to: `npm install && npm run build`
+3. Set the start command to: `npm start`
+4. Ensure the service type is set to "Web Service" (not "Static Site")
+
+#### Option B: Static Site (Current Setup)
+If you need to keep it as a "Static Site":
+1. The project includes a `public/404.html` file that handles client-side routing
+2. The `RedirectHandler` component manages redirects for direct URL access
+3. Build command: `npm run build`
+4. Publish directory: `dist`
+
+The static site approach uses a custom 404.html page that loads the React app and handles routing through sessionStorage.
+
 ## Can I connect a custom domain to my Lovable project?
 
 Yes, you can!

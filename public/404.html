@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glyanc Consulting</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
+
+    <meta property="og:title" content="Glyanc Consulting" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Handle client-side routing for static hosting
+      // This script runs before the React app loads
+      const path = window.location.pathname;
+      if (path !== '/') {
+        // Store the path in sessionStorage so the React app can access it
+        sessionStorage.setItem('redirectPath', path);
+        // Update the URL to the root without triggering a page reload
+        window.history.replaceState(null, '', '/');
+      }
+    </script>
+  </body>
+</html> 
