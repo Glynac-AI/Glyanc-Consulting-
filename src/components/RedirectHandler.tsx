@@ -19,13 +19,6 @@ const RedirectHandler = ({ children }: { children: React.ReactNode }) => {
       // Navigate to the correct path
       navigate(newPath, { replace: true });
     }
-
-    // Check for redirect path in sessionStorage (for static hosting)
-    const sessionRedirectPath = sessionStorage.getItem('redirectPath');
-    if (sessionRedirectPath) {
-      sessionStorage.removeItem('redirectPath');
-      navigate(sessionRedirectPath, { replace: true });
-    }
   }, [location.search, navigate]);
 
   return <>{children}</>;
