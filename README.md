@@ -62,7 +62,25 @@ This project is built with:
 
 ## How can I deploy this project?
 
+### Option 1: Using Lovable
 Simply open [Lovable](https://lovable.dev/projects/d63c259e-61df-44b6-b054-90d78c479294) and click on Share -> Publish.
+
+### Option 2: Manual Deployment with Express Server
+This project includes an Express server (`server.js`) to handle client-side routing properly. To deploy manually:
+
+1. Build the project:
+   ```sh
+   npm run build
+   ```
+
+2. Start the production server:
+   ```sh
+   npm start
+   ```
+
+The server will serve the built files from the `dist` directory and handle all routes by serving `index.html`, allowing React Router to handle client-side routing properly.
+
+**Note**: The server is configured to handle the "not found" issue when users directly access URLs like `/platform/insights` or refresh the page.
 
 ## Can I connect a custom domain to my Lovable project?
 
