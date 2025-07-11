@@ -58,6 +58,7 @@ import OpenPositions from "./pages/company/OpenPositions";
 import Culture from "./pages/company/Culture";
 import GetInTouch from "./pages/company/GetInTouch";
 import RequestDemo from "./pages/company/RequestDemo";
+import Experience from "./pages/Experience";
 
 const App = () => (
   <TooltipProvider>
@@ -117,6 +118,9 @@ const App = () => (
         <Route path="/company/leadership" element={<CompanyLeadership />} />
         <Route path="/company/culture" element={<Culture />} />
         <Route path="/company/demo" element={<RequestDemo />} />
+        
+        {/* Experience Route */}
+        <Route path="/experience" element={<Experience />} />
         
         {/* Legacy routes for backward compatibility */}
         <Route path="/about" element={<About />} />

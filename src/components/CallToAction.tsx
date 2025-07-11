@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
+import { Link } from 'react-router-dom';
 
 const CallToAction: React.FC = () => {
   return (
@@ -12,9 +13,11 @@ const CallToAction: React.FC = () => {
           <p className="text-xl text-lcw-primary max-w-3xl mx-auto leading-relaxed mb-8">
             Join forward-thinking organizations that are already leveraging AI to create the workplace cultures of tomorrow. See the future of work in action.
           </p>
-          <Button className="bg-lcw-primary hover:bg-lcw-accent text-white px-8 py-4 text-lg font-semibold rounded-lg">
-            Start Your AI Journey »
-          </Button>
+          <Link to="/experience?tab=demo">
+            <Button className="bg-lcw-primary hover:bg-lcw-accent text-white px-8 py-4 text-lg font-semibold rounded-lg">
+              Start Your AI Journey »
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

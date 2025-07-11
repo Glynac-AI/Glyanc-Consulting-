@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   return (
@@ -22,19 +23,23 @@ const HeroSection: React.FC = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-lcw-primary hover:bg-lcw-accent text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                Experience the Future »
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-lcw-primary text-lcw-primary hover:bg-lcw-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
-              >
-                Explore Platform »
-              </Button>
+              <Link to="/experience?tab=demo">
+                <Button 
+                  size="lg" 
+                  className="bg-lcw-primary hover:bg-lcw-accent text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  Experience the Future »
+                </Button>
+              </Link>
+              <Link to="/experience?tab=platform">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-lcw-primary text-lcw-primary hover:bg-lcw-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+                >
+                  Explore Platform »
+                </Button>
+              </Link>
             </div>
 
             <div className="pt-8">
