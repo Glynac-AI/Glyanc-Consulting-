@@ -15,6 +15,8 @@ const Experience = () => {
     if (tabParam === 'demo' || tabParam === 'platform') {
       setActiveTab(tabParam);
     }
+    // Scroll to top when page loads
+    window.scrollTo(0, 0);
   }, [searchParams]);
 
   const platformFeatures = [

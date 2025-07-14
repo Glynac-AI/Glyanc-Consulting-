@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -476,20 +477,23 @@ curl -X GET https://api.lcw.com/v1/assessments/assessment-id/results \\
                 cultural intelligence API and webhooks.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  size="lg" 
-                  className="bg-white text-lcw-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  Get API Key
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-lcw-primary px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
-                >
-                  <Share2 className="h-5 w-5 mr-2" />
-                  Contact Sales
-                </Button>
+                <Link to="/company/contact">
+                  <Button 
+                    size="lg" 
+                    className="bg-white text-lcw-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    <Share2 className="h-5 w-5 mr-2" />
+                    Contact Sales
+                  </Button>
+                </Link>
+                <Link to="/experience">
+                  <Button 
+                    size="lg" 
+                    className="bg-white text-lcw-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    Get API Key
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

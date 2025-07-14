@@ -92,18 +92,7 @@ const HowWeDoIt: React.FC = () => {
           </div>
         </div>
 
-        <div className="text-center mt-16">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="text-lcw-primary hover:text-lcw-accent font-medium flex items-center gap-2 text-lg bg-white hover:bg-lcw-light-gray px-6 py-3 rounded-lg transition-all duration-300 border border-lcw-primary">
-              Explore AI Capabilities »
-              <ArrowRight className="h-5 w-5" />
-            </Button>
-            <Button className="text-lcw-primary hover:text-lcw-accent font-medium flex items-center gap-2 text-lg bg-white hover:bg-lcw-light-gray px-6 py-3 rounded-lg transition-all duration-300 border border-lcw-primary">
-              Schedule AI Demo »
-              <ArrowRight className="h-5 w-5" />
-            </Button>
-          </div>
-        </div>
+
       </div>
     </section>
   );

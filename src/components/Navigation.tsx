@@ -215,7 +215,7 @@ const Navigation: React.FC = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link to="/company/demo">
+            <Link to="/experience?tab=demo">
               <Button className="bg-lcw-teal hover:bg-lcw-blue text-white">
                 REQUEST A DEMO
               </Button>
@@ -280,7 +280,7 @@ const Navigation: React.FC = () => {
             ))}
             
             <div className="pt-4">
-              <Link to="/company/demo">
+              <Link to="/experience?tab=demo">
                 <Button className="w-full bg-lcw-teal hover:bg-lcw-blue text-white">
                   REQUEST A DEMO
                 </Button>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "../../components/ui/button";
@@ -352,9 +353,11 @@ const Training = () => {
           <p className="text-xl text-[#1e3a8a]/90 max-w-3xl mx-auto mb-8">
             Connect with an LCW AI expert. We'll help you leverage the power of artificial intelligence to create a sustainable culture of inclusion, regardless of where your organization is on its digital transformation journey.
           </p>
-          <Button className="bg-[#1e3a8a] text-white hover:bg-[#1e3a8a]/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-            Contact Us »
-          </Button>
+          <Link to="/company/contact">
+            <Button className="bg-[#1e3a8a] text-white hover:bg-[#1e3a8a]/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              Contact Us »
+            </Button>
+          </Link>
         </div>
       </section>
 
