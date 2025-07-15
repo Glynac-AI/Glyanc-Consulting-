@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "../../components/ui/button";
+import { Link } from "react-router-dom";
 import { ArrowRight, Headphones, Cpu, Shield, Clock, CheckCircle, Award, TrendingUp, MessageSquare, Globe, Database, Zap } from 'lucide-react';
 
 const Support = () => {
@@ -143,12 +144,16 @@ const Support = () => {
                 Comprehensive technical support that ensures your LCW solutions run smoothly, efficiently, and securely with expert assistance when you need it most.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-white text-[#1e3a8a] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  Get Support »
-                </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#1e3a8a] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-                  View Plans »
-                </Button>
+                <Link to="/experience?tab=demo">
+                  <Button className="bg-white text-[#1e3a8a] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    Get Support »
+                  </Button>
+                </Link>
+                <Link to="/experience?tab=platform">
+                  <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#1e3a8a] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                    View Plans »
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -352,12 +357,16 @@ const Support = () => {
             Connect with our technical support team. We're here to help you resolve issues quickly and keep your LCW solutions running smoothly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-[#1e3a8a] text-white hover:bg-[#1e3a8a]/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-              Contact Support »
-            </Button>
-            <Button variant="outline" className="border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-              View Knowledge Base »
-            </Button>
+            <Link to="/consultation?tab=consultation">
+              <Button className="bg-[#1e3a8a] text-white hover:bg-[#1e3a8a]/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                Contact Support »
+              </Button>
+            </Link>
+            <Link to="/consultation?tab=brochure">
+              <Button variant="outline" className="border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                View Knowledge Base »
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

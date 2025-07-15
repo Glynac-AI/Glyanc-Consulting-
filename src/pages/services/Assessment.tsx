@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "../../components/ui/button";
+import { Link } from "react-router-dom";
 import { ArrowRight, ClipboardCheck, Users, Globe, BarChart3, TrendingUp, CheckCircle, Clock, Award, Eye, FileText, PieChart } from 'lucide-react';
 
 const Assessment = () => {
@@ -140,12 +141,16 @@ const Assessment = () => {
                 Comprehensive cultural evaluation and assessment services that provide deep insights into your organization's health, inclusion effectiveness, and opportunities for growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-white text-[#3cc1c9] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  Start Assessment »
-                </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#3cc1c9] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-                  View Sample Report »
-                </Button>
+                <Link to="/platform/assessment">
+                  <Button className="bg-white text-[#3cc1c9] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    Start Assessment »
+                  </Button>
+                </Link>
+                <Link to="/experience?tab=platform">
+                  <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#3cc1c9] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                    View Sample Report »
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -350,12 +355,16 @@ const Assessment = () => {
             Connect with our assessment experts. We'll help you understand your organization's cultural health and develop strategies for meaningful improvement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-[#1e3a8a] text-white hover:bg-[#1e3a8a]/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-              Schedule Assessment »
-            </Button>
-            <Button variant="outline" className="border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-              Download Brochure »
-            </Button>
+            <Link to="/consultation?tab=consultation">
+              <Button className="bg-[#1e3a8a] text-white hover:bg-[#1e3a8a]/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                Schedule Assessment »
+              </Button>
+            </Link>
+            <Link to="/consultation?tab=brochure">
+              <Button variant="outline" className="border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                Download Brochure »
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

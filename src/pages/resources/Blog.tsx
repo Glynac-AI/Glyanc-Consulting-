@@ -3,6 +3,7 @@ import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "../../components/ui/button";
 import { ArrowRight, Calendar, User, Tag, BookOpen, TrendingUp, Lightbulb, Users, Globe, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   const featuredPosts = [
@@ -99,12 +100,16 @@ const Blog = () => {
                 Insights, strategies, and thought leadership on cultural consulting, inclusive leadership, and organizational transformation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-white text-[#ff6b35] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  Subscribe to Newsletter »
-                </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#ff6b35] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-                  Browse Categories »
-                </Button>
+                <Link to="/blog-hub?tab=newsletter">
+                  <Button className="bg-white text-[#ff6b35] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    Subscribe to Newsletter »
+                  </Button>
+                </Link>
+                <Link to="/blog-hub?tab=categories">
+                  <Button className="border-white text-white hover:bg-white hover:text-[#ff6b35] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                    Browse Categories »
+                  </Button>
+                </Link>
               </div>
             </div>
 

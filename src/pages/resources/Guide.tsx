@@ -196,10 +196,17 @@ const Guide = () => {
                 Comprehensive guides and playbooks to help you successfully implement cultural consulting initiatives and drive organizational transformation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-white text-[#ff6b35] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/blog-hub?tab=categories'}
+                  className="bg-white text-[#ff6b35] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   Download Guides »
                 </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#ff6b35] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/blog-hub?tab=categories'}
+                  variant="outline" 
+                  className="border-white text-[#1e3a8a] hover:bg-white hover:text-[#ff6b35] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 bg-white/10 backdrop-blur-sm"
+                >
                   Get Custom Guide »
                 </Button>
               </div>
@@ -432,7 +439,10 @@ const Guide = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button className="bg-[#ff6b35] hover:bg-[#ff6b35]/90 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+            <Button 
+              onClick={() => window.location.href = '/blog-hub?tab=categories'}
+              className="bg-[#ff6b35] hover:bg-[#ff6b35]/90 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            >
               View All Guides »
             </Button>
           </div>
@@ -485,10 +495,17 @@ const Guide = () => {
               Our team can create customized implementation guides tailored to your organization's specific needs, industry, and challenges.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-[#ff6b35] hover:bg-[#ff6b35]/90 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/blog-hub?tab=categories'}
+                className="bg-[#ff6b35] hover:bg-[#ff6b35]/90 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 Request Custom Guide »
               </Button>
-              <Button variant="outline" className="border-[#ff6b35] text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/blog-hub?tab=categories'}
+                variant="outline" 
+                className="border-[#ff6b35] text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+              >
                 Schedule Consultation »
               </Button>
             </div>

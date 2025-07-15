@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "../../components/ui/button";
+import { Link } from "react-router-dom";
 import { ArrowRight, Target, Users, Globe, Brain, TrendingUp, BarChart3, Lightbulb, CheckCircle, Clock, Award } from 'lucide-react';
 
 const Strategy = () => {
@@ -105,12 +106,16 @@ const Strategy = () => {
                 Transform your organization with strategic consulting that drives inclusive growth, cultural evolution, and sustainable business success.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-white text-[#2cb674] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  Get Started »
-                </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#2cb674] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-                  View Case Studies »
-                </Button>
+                <Link to="/experience?tab=demo">
+                  <Button className="bg-white text-[#2cb674] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    Get Started »
+                  </Button>
+                </Link>
+                <Link to="/experience?tab=platform">
+                  <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#2cb674] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                    View Case Studies »
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -268,12 +273,16 @@ const Strategy = () => {
             Connect with our strategic consulting experts. We'll help you develop and implement strategies that drive both business success and inclusive growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-[#1e3a8a] text-white hover:bg-[#1e3a8a]/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-              Schedule Consultation »
-            </Button>
-            <Button variant="outline" className="border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-              Download Brochure »
-            </Button>
+            <Link to="/consultation?tab=consultation">
+              <Button className="bg-[#1e3a8a] text-white hover:bg-[#1e3a8a]/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                Schedule Consultation »
+              </Button>
+            </Link>
+            <Link to="/consultation?tab=brochure">
+              <Button variant="outline" className="border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                Download Brochure »
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

@@ -106,10 +106,17 @@ const Webinars = () => {
                 Join our interactive virtual sessions on cultural consulting, inclusive leadership, and organizational transformation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-white text-[#ff6b35] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/blog-hub?tab=subscribe'}
+                  className="bg-white text-[#ff6b35] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   Register for Upcoming »
                 </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#ff6b35] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/blog-hub?tab=categories'}
+                  variant="outline" 
+                  className="border-white text-[#1e3a8a] hover:bg-white hover:text-[#ff6b35] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 bg-white/10 backdrop-blur-sm"
+                >
                   Browse On-Demand »
                 </Button>
               </div>
@@ -308,7 +315,10 @@ const Webinars = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button className="bg-[#ff6b35] hover:bg-[#ff6b35]/90 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+            <Button 
+              onClick={() => window.location.href = '/blog-hub?tab=categories'}
+              className="bg-[#ff6b35] hover:bg-[#ff6b35]/90 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            >
               View All On-Demand Webinars »
             </Button>
           </div>
@@ -326,10 +336,17 @@ const Webinars = () => {
               Get notified about upcoming webinars and exclusive content. Never miss an opportunity to learn from our experts.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-[#ff6b35] hover:bg-[#ff6b35]/90 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/blog-hub?tab=subscribe'}
+                className="bg-[#ff6b35] hover:bg-[#ff6b35]/90 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 Subscribe to Webinar Updates »
               </Button>
-              <Button variant="outline" className="border-[#ff6b35] text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/blog-hub?tab=categories'}
+                variant="outline" 
+                className="border-[#ff6b35] text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+              >
                 Request Custom Webinar »
               </Button>
             </div>

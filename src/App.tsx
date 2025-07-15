@@ -46,7 +46,7 @@ import ResourcesWorkshops from "./pages/resources/Workshops";
 import Templates from "./pages/resources/Templates";
 import Guide from "./pages/resources/Guide";
 import Events from "./pages/resources/Events";
-import Newsletter from "./pages/resources/Newsletter";
+import ResourcesNewsletter from "./pages/resources/Newsletter";
 import Podcast from "./pages/resources/Podcast";
 
 // Company pages
@@ -60,6 +60,8 @@ import Culture from "./pages/company/Culture";
 import GetInTouch from "./pages/company/GetInTouch";
 import RequestDemo from "./pages/company/RequestDemo";
 import Experience from "./pages/Experience";
+import Consultation from "./pages/Consultation";
+import BlogHub from "./pages/BlogHub";
 
 const App = () => (
   <TooltipProvider>
@@ -109,7 +111,7 @@ const App = () => (
         <Route path="/resources/templates" element={<Templates />} />
         <Route path="/resources/guide" element={<Guide />} />
         <Route path="/resources/events" element={<Events />} />
-        <Route path="/resources/newsletter" element={<Newsletter />} />
+        <Route path="/resources/newsletter" element={<ResourcesNewsletter />} />
         <Route path="/resources/podcast" element={<Podcast />} />
         
         {/* Company Routes */}
@@ -123,6 +125,12 @@ const App = () => (
         
         {/* Experience Route */}
         <Route path="/experience" element={<Experience />} />
+        
+        {/* Consultation Route */}
+        <Route path="/consultation" element={<Consultation />} />
+        
+        {/* Blog Hub Route */}
+        <Route path="/blog-hub" element={<BlogHub />} />
         
         {/* Legacy routes for backward compatibility */}
         <Route path="/about" element={<About />} />
