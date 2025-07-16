@@ -337,13 +337,13 @@ const Webinars = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                onClick={() => window.location.href = '/blog-hub?tab=subscribe'}
+                onClick={() => window.location.href = '/resources/webinar-hub?tab=subscribe'}
                 className="bg-[#ff6b35] hover:bg-[#ff6b35]/90 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Subscribe to Webinar Updates »
               </Button>
               <Button 
-                onClick={() => window.location.href = '/blog-hub?tab=categories'}
+                onClick={() => window.location.href = '/resources/webinar-hub?tab=request'}
                 variant="outline" 
                 className="border-[#ff6b35] text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
               >

@@ -163,7 +163,10 @@ const Careers = () => {
               and shaping the future of industries worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+              <button 
+                onClick={() => window.location.href = '/company/leadership-hub?tab=careers'}
+                className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial"
+              >
                 View Open Positions
               </button>
               <button className="border-2 border-glynac-blue text-glynac-blue hover:bg-glynac-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all font-arial">
@@ -287,7 +290,10 @@ const Careers = () => {
           </div>
 
           <div className="text-center mt-12">
-            <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+            <button 
+              onClick={() => window.location.href = '/company/careers'}
+              className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial"
+            >
               View All Positions
             </button>
           </div>
@@ -346,7 +352,10 @@ const Careers = () => {
             and shaping the future of consulting.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+            <button 
+              onClick={() => window.location.href = '/company/careers'}
+              className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial"
+            >
               View Open Positions
             </button>
             <button className="border-2 border-glynac-blue text-glynac-blue hover:bg-glynac-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all font-arial">

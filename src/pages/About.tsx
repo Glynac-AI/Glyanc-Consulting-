@@ -242,7 +242,10 @@ const About = () => {
 
           <div className="text-center mt-12">
             <p className="text-glynac-steel-blue mb-4 font-arial">Still have questions? We're here to help.</p>
-            <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-3 rounded font-medium transition-colors font-arial">
+            <button 
+              onClick={() => window.location.href = '/company/contact-hub?tab=contact'}
+              className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-3 rounded font-medium transition-colors font-arial"
+            >
               INQUIRE NOW
             </button>
           </div>

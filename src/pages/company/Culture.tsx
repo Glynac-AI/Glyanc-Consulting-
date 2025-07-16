@@ -163,10 +163,17 @@ const Culture = () => {
                 We're building more than a company - we're creating a community where every individual can thrive, grow, and make a meaningful impact.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-gray-800 text-white hover:bg-gray-700 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/company/impact-careers-hub?tab=careers'}
+                  className="bg-gray-800 text-white hover:bg-gray-700 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   Join Our Team »
                 </Button>
-                <Button variant="outline" className="border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/about/people'}
+                  variant="outline" 
+                  className="border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+                >
                   Meet Our Team »
                 </Button>
               </div>
@@ -371,10 +378,17 @@ const Culture = () => {
               If you're passionate about creating inclusive workplaces and want to be part of a team that values your unique perspective, we'd love to hear from you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-[#c2c5c8] hover:bg-[#c2c5c8]/90 text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/company/leadership-hub?tab=careers'}
+                className="bg-[#c2c5c8] hover:bg-[#c2c5c8]/90 text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 View Open Positions »
               </Button>
-              <Button variant="outline" className="border-[#c2c5c8] text-gray-800 hover:bg-[#c2c5c8] hover:text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/company/contact-hub?tab=contact'}
+                variant="outline" 
+                className="border-[#c2c5c8] text-gray-800 hover:bg-[#c2c5c8] hover:text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+              >
                 Contact Our Team »
               </Button>
             </div>

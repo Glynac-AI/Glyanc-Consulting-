@@ -278,7 +278,7 @@ const Strategy = () => {
                 Schedule Consultation »
               </Button>
             </Link>
-            <Link to="/consultation?tab=brochure">
+            <Link to="/company/demo">
               <Button variant="outline" className="border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
                 Download Brochure »
               </Button>

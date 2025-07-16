@@ -191,7 +191,7 @@ const Experience = () => {
                   <Button 
                     size="lg" 
                     className="bg-lcw-primary hover:bg-lcw-accent text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                    onClick={() => setActiveTab('demo')}
+                    onClick={() => window.location.href = '/company/contact-hub?tab=demo'}
                   >
                     Request Demo »
                   </Button>
@@ -251,6 +251,7 @@ const Experience = () => {
                   <Button 
                     size="lg" 
                     className="bg-lcw-primary hover:bg-lcw-accent text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                    onClick={() => window.location.href = '/company/contact-hub?tab=demo'}
                   >
                     Schedule Demo »
                   </Button>
@@ -544,7 +545,11 @@ const Experience = () => {
               >
                 Schedule Demo Now »
               </Button>
-              <Button variant="outline" className="border-lcw-primary text-lcw-primary hover:bg-lcw-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/company/demo'}
+                variant="outline" 
+                className="border-lcw-primary text-lcw-primary hover:bg-lcw-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+              >
                 Download Brochure »
               </Button>
             </div>

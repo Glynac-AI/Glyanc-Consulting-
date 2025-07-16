@@ -160,7 +160,7 @@ const Workshops = () => {
                   View Upcoming Workshops »
                 </Button>
                 <Button 
-                  onClick={() => window.location.href = '/blog-hub?tab=categories'}
+                  onClick={() => window.location.href = '/resources/workshop-hub?tab=request'}
                   variant="outline" 
                   className="border-white text-[#1e3a8a] hover:bg-white hover:text-[#ff6b35] px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 bg-white/10 backdrop-blur-sm"
                 >
@@ -440,7 +440,7 @@ const Workshops = () => {
                 Browse All Workshops »
               </Button>
               <Button 
-                onClick={() => window.location.href = '/blog-hub?tab=categories'}
+                onClick={() => window.location.href = '/resources/workshop-hub?tab=request'}
                 variant="outline" 
                 className="border-[#ff6b35] text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
               >

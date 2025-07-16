@@ -40,6 +40,12 @@ import Optimization from "./pages/services/Optimization";
 
 // Resources pages
 import ResourcesResearch from "./pages/resources/Research";
+import SubscribeResearch from "./pages/resources/SubscribeResearch";
+import RequestCustomResearch from "./pages/resources/RequestCustomResearch";
+import ResearchHub from "./pages/resources/ResearchHub";
+import WebinarHub from "./pages/resources/WebinarHub";
+import WorkshopHub from "./pages/resources/WorkshopHub";
+import TemplateHub from "./pages/resources/TemplateHub";
 import Blog from "./pages/resources/Blog";
 import Webinars from "./pages/resources/Webinars";
 import ResourcesWorkshops from "./pages/resources/Workshops";
@@ -59,6 +65,11 @@ import OpenPositions from "./pages/company/OpenPositions";
 import Culture from "./pages/company/Culture";
 import GetInTouch from "./pages/company/GetInTouch";
 import RequestDemo from "./pages/company/RequestDemo";
+import Impact from "./pages/about/Impact";
+import People from "./pages/about/People";
+import ImpactCareersHub from "./pages/company/ImpactCareersHub";
+import LeadershipHub from "./pages/company/LeadershipHub";
+import ContactHub from "./pages/company/ContactHub";
 import Experience from "./pages/Experience";
 import Consultation from "./pages/Consultation";
 import BlogHub from "./pages/BlogHub";
@@ -105,6 +116,12 @@ const App = () => (
         
         {/* Resources Routes */}
         <Route path="/resources/research" element={<ResourcesResearch />} />
+        <Route path="/resources/subscribe-research" element={<SubscribeResearch />} />
+        <Route path="/resources/request-custom-research" element={<RequestCustomResearch />} />
+        <Route path="/resources/research-hub" element={<ResearchHub />} />
+        <Route path="/resources/webinar-hub" element={<WebinarHub />} />
+        <Route path="/resources/workshop-hub" element={<WorkshopHub />} />
+        <Route path="/resources/template-hub" element={<TemplateHub />} />
         <Route path="/resources/blog" element={<Blog />} />
         <Route path="/resources/webinars" element={<Webinars />} />
         <Route path="/resources/workshops" element={<ResourcesWorkshops />} />
@@ -122,6 +139,15 @@ const App = () => (
         <Route path="/company/leadership" element={<CompanyLeadership />} />
         <Route path="/company/culture" element={<Culture />} />
         <Route path="/company/demo" element={<RequestDemo />} />
+        
+        {/* About Routes */}
+        <Route path="/about/impact" element={<Impact />} />
+        <Route path="/about/people" element={<People />} />
+        
+        {/* Company Hub Routes */}
+        <Route path="/company/impact-careers-hub" element={<ImpactCareersHub />} />
+        <Route path="/company/leadership-hub" element={<LeadershipHub />} />
+        <Route path="/company/contact-hub" element={<ContactHub />} />
         
         {/* Experience Route */}
         <Route path="/experience" element={<Experience />} />

@@ -301,7 +301,10 @@ const Contact = () => {
             seize opportunities, and achieve sustainable growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+            <button 
+              onClick={() => window.location.href = '/company/contact-hub?tab=contact'}
+              className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial"
+            >
               INQUIRE NOW
             </button>
             <button className="border-2 border-glynac-blue text-glynac-blue hover:bg-glynac-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all font-arial">

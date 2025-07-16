@@ -135,10 +135,17 @@ const RequestDemo = () => {
                 See our solutions in action with a personalized demonstration tailored to your organization's unique needs and challenges.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-gray-800 text-white hover:bg-gray-700 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/company/contact-hub?tab=demo'}
+                  className="bg-gray-800 text-white hover:bg-gray-700 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   Schedule Demo »
                 </Button>
-                <Button variant="outline" className="border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/company/contact-hub?tab=demo'}
+                  variant="outline" 
+                  className="border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+                >
                   Watch Video »
                 </Button>
               </div>
@@ -456,10 +463,17 @@ const RequestDemo = () => {
               Don't wait to start your organization's transformation journey. Schedule a demo today and see how we can help you build a more inclusive and effective workplace.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-[#c2c5c8] hover:bg-[#c2c5c8]/90 text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/experience?tab=demo'}
+                className="bg-[#c2c5c8] hover:bg-[#c2c5c8]/90 text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 Schedule Demo Now »
               </Button>
-              <Button variant="outline" className="border-[#c2c5c8] text-gray-800 hover:bg-[#c2c5c8] hover:text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/company/demo'}
+                variant="outline" 
+                className="border-[#c2c5c8] text-gray-800 hover:bg-[#c2c5c8] hover:text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+              >
                 Download Brochure »
               </Button>
             </div>

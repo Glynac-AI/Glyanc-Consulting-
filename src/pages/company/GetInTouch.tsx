@@ -104,10 +104,17 @@ const GetInTouch = () => {
                 Ready to transform your organization? We're here to help. Reach out to start a conversation about how we can support your inclusion and culture goals.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-gray-800 text-white hover:bg-gray-700 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/company/contact-hub?tab=contact'}
+                  className="bg-gray-800 text-white hover:bg-gray-700 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   Schedule a Call »
                 </Button>
-                <Button variant="outline" className="border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/company/contact-hub?tab=contact'}
+                  variant="outline" 
+                  className="border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+                >
                   Send Message »
                 </Button>
               </div>
@@ -361,10 +368,17 @@ const GetInTouch = () => {
               Don't wait to transform your organization. Reach out today and let's discuss how we can help you build a more inclusive and effective workplace.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-[#c2c5c8] hover:bg-[#c2c5c8]/90 text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/company/contact-hub?tab=consultation'}
+                className="bg-[#c2c5c8] hover:bg-[#c2c5c8]/90 text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 Schedule a Consultation »
               </Button>
-              <Button variant="outline" className="border-[#c2c5c8] text-gray-800 hover:bg-[#c2c5c8] hover:text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/company/demo'}
+                variant="outline" 
+                className="border-[#c2c5c8] text-gray-800 hover:bg-[#c2c5c8] hover:text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+              >
                 Download Our Brochure »
               </Button>
             </div>

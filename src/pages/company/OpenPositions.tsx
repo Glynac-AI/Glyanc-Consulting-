@@ -193,10 +193,17 @@ const OpenPositions = () => {
                 Help us transform organizations by building inclusive cultures that drive innovation, performance, and sustainable growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-gray-800 text-white hover:bg-gray-700 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/company/careers'}
+                  className="bg-gray-800 text-white hover:bg-gray-700 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   View All Positions »
                 </Button>
-                <Button variant="outline" className="border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/company/culture'}
+                  variant="outline" 
+                  className="border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+                >
                   Learn About Our Culture »
                 </Button>
               </div>
@@ -388,10 +395,17 @@ const OpenPositions = () => {
               We're always looking for talented individuals who are passionate about creating inclusive workplaces. Send us your resume and we'll keep you in mind for future opportunities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-[#c2c5c8] hover:bg-[#c2c5c8]/90 text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/company/leadership-hub?tab=careers'}
+                className="bg-[#c2c5c8] hover:bg-[#c2c5c8]/90 text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 Submit Your Resume »
               </Button>
-              <Button variant="outline" className="border-[#c2c5c8] text-gray-800 hover:bg-[#c2c5c8] hover:text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/company/culture'}
+                variant="outline" 
+                className="border-[#c2c5c8] text-gray-800 hover:bg-[#c2c5c8] hover:text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+              >
                 Learn About Our Culture »
               </Button>
             </div>

@@ -214,7 +214,10 @@ const IndustryDetails = () => {
                     </div>
 
                     <div className="mt-6">
-                      <button className="w-full bg-glynac-blue hover:bg-glynac-steel-blue text-white px-6 py-3 rounded font-medium transition-colors font-arial">
+                      <button 
+                        onClick={() => window.location.href = '/company/contact-hub?tab=consultation'}
+                        className="w-full bg-glynac-blue hover:bg-glynac-steel-blue text-white px-6 py-3 rounded font-medium transition-colors font-arial"
+                      >
                         Learn More About {industry.name}
                       </button>
                     </div>
@@ -231,10 +234,16 @@ const IndustryDetails = () => {
             Our industry experts are ready to help you overcome your unique challenges and achieve sustainable growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-3 rounded font-medium transition-colors font-arial">
+            <button 
+              onClick={() => window.location.href = '/company/contact-hub?tab=contact'}
+              className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-3 rounded font-medium transition-colors font-arial"
+            >
               INQUIRE NOW
             </button>
-            <button className="border-2 border-glynac-midnight-blue text-glynac-midnight-blue hover:bg-glynac-midnight-blue hover:text-white px-8 py-3 rounded font-medium transition-all font-arial">
+            <button 
+              onClick={() => window.location.href = '/company/about'}
+              className="border-2 border-glynac-midnight-blue text-glynac-midnight-blue hover:bg-glynac-midnight-blue hover:text-white px-8 py-3 rounded font-medium transition-all font-arial"
+            >
               View Industry Case Studies
             </button>
           </div>

@@ -138,10 +138,16 @@ const People = () => {
               bringing expertise, innovation, and dedication to every client engagement.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial">
+              <button 
+                onClick={() => window.location.href = '/company/impact-careers-hub?tab=careers'}
+                className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-8 py-4 rounded-lg font-semibold transition-colors font-arial"
+              >
                 Join Our Team
               </button>
-              <button className="border-2 border-glynac-blue text-glynac-blue hover:bg-glynac-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all font-arial">
+              <button 
+                onClick={() => window.location.href = '/company/leadership-hub?tab=leadership'}
+                className="border-2 border-glynac-blue text-glynac-blue hover:bg-glynac-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all font-arial"
+              >
                 Meet Our Leaders
               </button>
             </div>
@@ -312,7 +318,10 @@ const People = () => {
                     Collaborative and supportive team environment
                   </div>
                 </div>
-                <button className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-6 py-3 rounded-lg font-semibold transition-colors font-arial">
+                <button 
+                  onClick={() => window.location.href = '/company/impact-careers-hub?tab=careers'}
+                  className="bg-glynac-blue hover:bg-glynac-steel-blue text-white px-6 py-3 rounded-lg font-semibold transition-colors font-arial"
+                >
                   View Open Positions
                 </button>
               </div>

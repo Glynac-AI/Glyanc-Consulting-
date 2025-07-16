@@ -228,7 +228,7 @@ const ServicesOverview = () => {
           </p>
           <div className="mt-8">
             <a
-              href="/contact"
+              href="/company/contact-hub?tab=contact"
               className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded text-white bg-glynac-blue hover:bg-glynac-steel-blue transition-colors font-arial"
             >
               INQUIRE NOW

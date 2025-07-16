@@ -502,7 +502,7 @@ const Guide = () => {
                 Request Custom Guide »
               </Button>
               <Button 
-                onClick={() => window.location.href = '/blog-hub?tab=categories'}
+                onClick={() => window.location.href = '/consultation?tab=consultation'}
                 variant="outline" 
                 className="border-[#ff6b35] text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
               >

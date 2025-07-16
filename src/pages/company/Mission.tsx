@@ -95,10 +95,17 @@ const Mission = () => {
                 To transform organizations by building inclusive cultures that drive innovation, performance, and sustainable growth while creating positive social impact.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-gray-800 text-white hover:bg-gray-700 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/company/impact-careers-hub?tab=impact'}
+                  className="bg-gray-800 text-white hover:bg-gray-700 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
                   Learn About Our Impact »
                 </Button>
-                <Button variant="outline" className="border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                <Button 
+                  onClick={() => window.location.href = '/company/impact-careers-hub?tab=careers'}
+                  variant="outline" 
+                  className="border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+                >
                   Join Our Team »
                 </Button>
               </div>
@@ -248,10 +255,17 @@ const Mission = () => {
               Join hundreds of organizations that have partnered with us to build more inclusive, innovative, and successful cultures.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-[#c2c5c8] hover:bg-[#c2c5c8]/90 text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/company/contact-hub?tab=consultation'}
+                className="bg-[#c2c5c8] hover:bg-[#c2c5c8]/90 text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 Start Your Transformation »
               </Button>
-              <Button variant="outline" className="border-[#c2c5c8] text-gray-800 hover:bg-[#c2c5c8] hover:text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+              <Button 
+                onClick={() => window.location.href = '/company/about'}
+                variant="outline" 
+                className="border-[#c2c5c8] text-gray-800 hover:bg-[#c2c5c8] hover:text-gray-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+              >
                 Learn More About Us »
               </Button>
             </div>
